@@ -45107,7 +45107,7 @@ GameObject:
   - component: {fileID: 886077133}
   - component: {fileID: 886077132}
   m_Layer: 5
-  m_Name: Hada
+  m_Name: IconLogo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
