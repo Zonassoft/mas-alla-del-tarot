@@ -80,9 +80,13 @@
     <Compile Include="Assets\Scripts\GameNames\GameNamesController.cs" />
     <Compile Include="Assets\Scripts\Horoscopo\HoroscopoController.cs" />
     <Compile Include="Assets\Scripts\Horoscopo\HoroscopoControllerDesktop.cs" />
+    <Compile Include="Assets\Scripts\Music\PlaySoundButton.cs" />
+    <Compile Include="Assets\Scripts\Music\PlaySoundGO.cs" />
+    <Compile Include="Assets\Scripts\Music\SoundUi.cs" />
     <Compile Include="Assets\Scripts\ScreenSelect.cs" />
     <Compile Include="Assets\Scripts\ScreenStart.cs" />
     <Compile Include="Assets\Scripts\SelectGame\SelectGameController.cs" />
+    <Compile Include="Assets\Scripts\Singleton.cs" />
     <Compile Include="Assets\WebGLSupport\WebGLInput\Detail\RebuildChecker.cs" />
     <Compile Include="Assets\WebGLSupport\WebGLInput\WebGLInput.cs" />
     <Compile Include="Assets\WebGLSupport\WebGLInput\Wrapper\IInputField.cs" />
@@ -108,34 +112,34 @@
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>F:/Unity/Work/Destino 2/Proyecto Unity/Más allá del tarot/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>F:/Unity/Work/Más allá del tarot/Proyecto Unity/Más allá del tarot/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>F:/Unity/Work/Destino 2/Proyecto Unity/Más allá del tarot/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>F:/Unity/Work/Más allá del tarot/Proyecto Unity/Más allá del tarot/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>F:/Unity/Work/Destino 2/Proyecto Unity/Más allá del tarot/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>F:/Unity/Work/Más allá del tarot/Proyecto Unity/Más allá del tarot/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>F:/Unity/Work/Destino 2/Proyecto Unity/Más allá del tarot/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>F:/Unity/Work/Más allá del tarot/Proyecto Unity/Más allá del tarot/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>F:/Unity/Work/Destino 2/Proyecto Unity/Más allá del tarot/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>F:/Unity/Work/Más allá del tarot/Proyecto Unity/Más allá del tarot/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>F:/Unity/Work/Destino 2/Proyecto Unity/Más allá del tarot/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>F:/Unity/Work/Más allá del tarot/Proyecto Unity/Más allá del tarot/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>F:/Unity/Work/Destino 2/Proyecto Unity/Más allá del tarot/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro">
-      <HintPath>F:/Unity/Work/Destino 2/Proyecto Unity/Más allá del tarot/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.UI">
-      <HintPath>F:/Unity/Work/Destino 2/Proyecto Unity/Más allá del tarot/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>F:/Unity/Work/Más allá del tarot/Proyecto Unity/Más allá del tarot/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>F:/Unity/Work/Destino 2/Proyecto Unity/Más allá del tarot/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+      <HintPath>F:/Unity/Work/Más allá del tarot/Proyecto Unity/Más allá del tarot/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>F:/Unity/Work/Más allá del tarot/Proyecto Unity/Más allá del tarot/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>F:/Unity/Work/Más allá del tarot/Proyecto Unity/Más allá del tarot/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

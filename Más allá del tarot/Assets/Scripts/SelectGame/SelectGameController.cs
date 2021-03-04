@@ -4,8 +4,6 @@ using System.Runtime.InteropServices;
 
 public class SelectGameController : MonoBehaviour
 {
-    public bool isPortrait;
-    
     public GameObject panelTurnBlack;
     private bool panelTurnBlackActive;
     

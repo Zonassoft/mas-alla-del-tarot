@@ -7,22 +7,14 @@ using UnityEngine.EventSystems;
 
 public class CardDragger : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
+	public PlaySoundButton playSoundClass;
 	public static Transform draggedCard;                          
 	public Transform hand;                                        
 	public GameObject papelera;
 	
-	AudioSource[] audioSources;
-	private AudioSource coger;
-	
-	private void Start()
-	{
-		audioSources = GetComponents<AudioSource>();
-		coger = audioSources[0];
-	}
-
 	public void OnBeginDrag (PointerEventData eventData)
 	{
-		coger.Play();
+		SoundUi.Instance.PlaySound(8);
 		
 		if (transform.childCount == 0)                           
 		{ 

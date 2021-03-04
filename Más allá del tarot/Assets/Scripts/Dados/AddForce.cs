@@ -31,7 +31,6 @@ public class AddForce : MonoBehaviour
             float forceMagnitud = Random.Range(minForce, maxForce);
             Vector3 force = Vector3.Normalize(forceDirectionVector) * forceMagnitud;
             dadoLila.GetComponent<Rigidbody>().AddForce(force);
-            
         }
     }
 }

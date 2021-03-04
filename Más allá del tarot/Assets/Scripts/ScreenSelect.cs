@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using System.Runtime.InteropServices;
-//using UnityEngine.iOS;
 
 public class ScreenSelect : MonoBehaviour
 {
@@ -10,8 +9,6 @@ public class ScreenSelect : MonoBehaviour
     public GameObject ScreenMobileScript;
     public GameObject ScreenDesktopScript;
 
-    public bool isPortrait;
-    
     public GameObject panelTurnBlack;
     private bool panelTurnBlackActive;
     
@@ -54,7 +51,6 @@ public class ScreenSelect : MonoBehaviour
     
     void Start()
     {
-        // Device.generation.ToString().IndexOf("iPad") > -1
         if (isMobile() || IsPad() || SystemInfo.deviceName.Contains("iPad"))
         {
             ScreenMobile.SetActive(true);

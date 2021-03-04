@@ -7,33 +7,25 @@ using UnityEngine.EventSystems;
 
 public class SelectCard : MonoBehaviour, IPointerClickHandler
 {
+    public PlaySoundButton playSoundClass;
     private GameTarotController classController;
     public Text number;
     private bool selected;
     
-    AudioSource[] audioSources;
-    private AudioSource clic;
-
     void Awake()
     {
         classController = FindObjectOfType<GameTarotController>();
     }
-    
-    private void Start()
-    {
-        audioSources = GetComponents<AudioSource>();
-        clic = audioSources[0];
-    }
 
     public void OnPointerClick(PointerEventData pointerEventData)
     {
-       clic.Play();
+       SoundUi.Instance.PlaySound(1);
+        
        if (classController.countselectedCard < 4 && !selected)
        {
             selected = true;
             classController.countselectedCard++;
             gameObject.transform.position = new Vector3(gameObject.transform.position.x + 20f, gameObject.transform.position.y + 40f, gameObject.transform.position.z);
-                
             GameObject cardChild = gameObject.transform.GetChild(1).gameObject;
             
             for (int i = 0; i < 4; i++)
@@ -50,24 +42,15 @@ public class SelectCard : MonoBehaviour, IPointerClickHandler
             }
 
            if (classController.countselectedCard == 4)
-           {
                classController.buttonAccept.gameObject.GetComponent<Image>().sprite = classController.buttonEnnable;
-               classController.buttonAccept.gameObject.GetComponent<Image>().color = new Color(1f, 1f, 1f, 1f);
-               GameObject textbutton = classController.buttonAccept.gameObject.transform.GetChild(0).gameObject;
-               textbutton.gameObject.GetComponent<Text>().color = new Color(1f, 1f, 1f, 1f);
-           }
         }
         else if (selected)
         {
             classController.buttonAccept.gameObject.GetComponent<Image>().sprite = classController.buttonDisable;
-            classController.buttonAccept.gameObject.GetComponent<Image>().color = new Color(1f, 1f, 1f, 0.5f);
-            GameObject textbutton = classController.buttonAccept.gameObject.transform.GetChild(0).gameObject;
-            textbutton.gameObject.GetComponent<Text>().color = new Color(0.78f, 0.72f, 0.78f, 1f);
             selected = false;
             classController.countselectedCard--;
             gameObject.transform.position = new Vector3(gameObject.transform.position.x - 20f, gameObject.transform.position.y - 40f, gameObject.transform.position.z);
             number.text = "";
-                
             GameObject cardChild = gameObject.transform.GetChild(1).gameObject;
                 
             for (int i = 0; i < 4; i++)

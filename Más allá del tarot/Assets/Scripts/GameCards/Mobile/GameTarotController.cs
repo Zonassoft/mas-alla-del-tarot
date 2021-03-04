@@ -96,9 +96,6 @@ public class GameTarotController : MonoBehaviour
     private bool panelOptionActive;
     private bool dragCard;
     
-    AudioSource[] audioSources;
-    private AudioSource barajar, voltear, revelacion, menu;
-    
     public Sprite buttonEnnable;
     public Sprite buttonDisable;
     public GameObject childpanelBoxs;
@@ -107,12 +104,6 @@ public class GameTarotController : MonoBehaviour
     {
         if (canvasGame.transform.GetComponent<RectTransform>().rect.width < childpanelBoxs.transform.GetComponent<RectTransform>().rect.width)
             canvasGame.transform.GetComponent<CanvasScaler>().matchWidthOrHeight = 0.9f;
-        
-        audioSources = GetComponents<AudioSource>();
-        barajar = audioSources[0];
-        voltear = audioSources[1];
-        revelacion = audioSources[2];
-        menu = audioSources[3];
         
         buttonFullScreen.onClick.AddListener(TaskOnClickMax);
         buttonMinimize.onClick.AddListener(TaskOnClickMin);
@@ -160,9 +151,9 @@ public class GameTarotController : MonoBehaviour
     {
         yield return new WaitForSeconds(0.5f);
         
-         #if !UNITY_EDITOR && UNITY_WEBGL
-            FullScreenFunction();
-         #endif
+        #if !UNITY_EDITOR && UNITY_WEBGL
+           FullScreenFunction();
+        #endif
     }
 
     void TaskOnClickMin()
@@ -182,10 +173,6 @@ public class GameTarotController : MonoBehaviour
         panelSelectCards.SetActive(true);
         
         buttonAccept.gameObject.GetComponent<Image>().sprite = buttonDisable;
-        buttonAccept.gameObject.GetComponent<Image>().color = new Color(1f, 1f, 1f, 0.5f);
-        GameObject textbutton = buttonAccept.gameObject.transform.GetChild(0).gameObject;
-        textbutton.gameObject.GetComponent<Text>().color = new Color(0.78f, 0.72f, 0.78f, 1f);
-        
         StartCoroutine(GetToken("Http://82.223.139.65/api/v1/auth/login/", "admin", "destino"));
     }
     
@@ -208,7 +195,6 @@ public class GameTarotController : MonoBehaviour
             string jsonString = req.downloadHandler.text;
             TokenAPITarot dataKey = JsonUtility.FromJson<TokenAPITarot>(jsonString);
             API_KEY = dataKey.key;
-            
             StartCoroutine(GetDatesCards("Http://82.223.139.65/api/v1/admin/card/", dataKey.key));
         }
     }
@@ -281,7 +267,7 @@ public class GameTarotController : MonoBehaviour
             }
         }
         
-        barajar.Play();
+        SoundUi.Instance.PlaySound(6);
         StartCoroutine(WaitLoadingPanel());
     }
 
@@ -306,7 +292,6 @@ public class GameTarotController : MonoBehaviour
         msgButton.SetActive(true);
         
         yield return new WaitForSeconds(2f);
-        
         msgButton.SetActive(false);
     }
     
@@ -368,11 +353,9 @@ public class GameTarotController : MonoBehaviour
     {
         buttonShowing.interactable = false;
         buttonShowing.gameObject.GetComponent<Image>().sprite = buttonDisable;
-        GameObject textbutton = buttonShowing.gameObject.transform.GetChild(0).gameObject;
-        textbutton.gameObject.GetComponent<Text>().color = new Color(0.78f, 0.72f, 0.78f, 1f);
         
         DatesViewReading();
-        voltear.Play();
+        SoundUi.Instance.PlaySound(5);
         
         for (int i = 0; i < 4; i++)
         {
@@ -419,7 +402,6 @@ public class GameTarotController : MonoBehaviour
         {
             if (myObject.cardAPIList[i].id == card.GetComponent<CardNew>().idCardAPI)
             {
-                Debug.Log(card.GetComponent<Image>().name);
                 card.GetComponent<Image>().sprite = objectsImage[pos].GetComponent<Image>().sprite;
                 break;
             }
@@ -485,7 +467,6 @@ public class GameTarotController : MonoBehaviour
                     jsonString = jsonString.Remove(0, 11);
                     jsonString = Regex.Replace(jsonString, @"(.*)]}$","$1");
                     DescriptionAPI dataDescription = JsonUtility.FromJson<DescriptionAPI>(jsonString);
-                    
                     string predictionOk = dataDescription.predictions;
             
                     if (predictionOk.Contains("\u2028"))
@@ -502,7 +483,7 @@ public class GameTarotController : MonoBehaviour
                 {
                     LoadingPanel.SetActive(false);
                     panelReading.SetActive(true);
-                    revelacion.Play();
+                    SoundUi.Instance.PlaySound(3);
                 }
             }
         }
@@ -513,13 +494,13 @@ public class GameTarotController : MonoBehaviour
         panelOptionActive = true;
         panelOptions.SetActive(true);
         Menu.GetComponent<Animation>().Play("MenuIn");
-        menu.Play();
+        SoundUi.Instance.PlaySound(2);
     }
     
     public void ButtonQuitOptions()
     {
         panelOptionActive = false;
-        menu.Play();
+        SoundUi.Instance.PlaySound(2);
         Menu.GetComponent<Animation>().Play("MenuOut");
         StartCoroutine(AnimationMenu());
     }
@@ -541,7 +522,7 @@ public class GameTarotController : MonoBehaviour
         if (panelOptionActive && nameScene != "SelectGame")
         {
             panelOptionActive = false;
-            menu.Play();
+            SoundUi.Instance.PlaySound(2);
             Menu.GetComponent<Animation>().Play("MenuOut");
             StartCoroutine(AnimationMenuStartScene(nameScene));
         }

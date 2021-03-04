@@ -38,13 +38,10 @@ public class HoroscopoController : MonoBehaviour
     public Text dateSignSelected;
     public Text descriptionSignSelected;
     
-    private string[] nameSign = new[] {"Acuario", "Piscis", "Aries", "Tauro", "Géminis", "Cáncer", "Leo", "Virgo", "Libra", "Escorpio", "Sagitario", "Capricornio"};
-    private string[] dateSign = new[] {"(20 enero-18 febrero)", "(19 febrero-20 marzo)", "(21 marzo-19 abril)", "(20 abril-20 mayo)", "(21 mayo-20 junio)", 
+    private string[] nameSign = {"Acuario", "Piscis", "Aries", "Tauro", "Géminis", "Cáncer", "Leo", "Virgo", "Libra", "Escorpio", "Sagitario", "Capricornio"};
+    private string[] dateSign = {"(20 enero-18 febrero)", "(19 febrero-20 marzo)", "(21 marzo-19 abril)", "(20 abril-20 mayo)", "(21 mayo-20 junio)", 
         "(21 junio-22 julio)", "(23 julio-22 agosto)", "(23 agosto-22 septiembre)", "(23 septiembre-22 octubre)", "(23 octubre-21 noviembre)", 
         "(22 noviembre-21 diciembre)", "(22 diciembre-19 enero)"};
-    
-    AudioSource[] audioSources;
-    private AudioSource revelacion, menu;
     
     [DllImport("__Internal")]
     private static extern void FullScreenFunction();
@@ -54,10 +51,6 @@ public class HoroscopoController : MonoBehaviour
     
     private void Start()
     {
-        audioSources = GetComponents<AudioSource>();
-        revelacion = audioSources[0];
-        menu = audioSources[1];
-        
         buttonFullScreen.onClick.AddListener(TaskOnClickMax);
         buttonMinimize.onClick.AddListener(TaskOnClickMin);
     }
@@ -85,9 +78,9 @@ public class HoroscopoController : MonoBehaviour
     {
         yield return new WaitForSeconds(0.5f);
         
-         #if !UNITY_EDITOR && UNITY_WEBGL
-            FullScreenFunction();
-         #endif
+        #if !UNITY_EDITOR && UNITY_WEBGL
+           FullScreenFunction();
+        #endif
     }
 
     void TaskOnClickMin()
@@ -104,7 +97,6 @@ public class HoroscopoController : MonoBehaviour
     public void ViewZodiac(int posSign)
     {
         panelLoading.SetActive(true);
-        
         StartCoroutine(GetToken("http://82.223.139.65/api/v1/auth/login/", "admin", "destino", posSign));
     }
     
@@ -183,7 +175,6 @@ public class HoroscopoController : MonoBehaviour
                 jsonString = Regex.Replace(jsonString, @"(.*)}$", "$1");
 
                 HoroscopoInfoM data = JsonUtility.FromJson<HoroscopoInfoM>(jsonString);
-
                 string descriptionZodiacOk = data.description_zodiac;
 
                 if (descriptionZodiacOk.Contains("\u2028"))
@@ -212,7 +203,7 @@ public class HoroscopoController : MonoBehaviour
             panelButtons.SetActive(false);
             panelReading.SetActive(true);
             panelLoading.SetActive(false);
-            revelacion.Play();
+            SoundUi.Instance.PlaySound(3);
         }
     }
     
@@ -221,13 +212,13 @@ public class HoroscopoController : MonoBehaviour
         panelOptionActive = true;
         panelOptions.SetActive(true);
         Menu.GetComponent<Animation>().Play("MenuIn");
-        menu.Play();
+        SoundUi.Instance.PlaySound(2);
     }
     
     public void ButtonQuitOptions()
     {
         panelOptionActive = false;
-        menu.Play();
+        SoundUi.Instance.PlaySound(2);
         Menu.GetComponent<Animation>().Play("MenuOut");
         StartCoroutine(AnimationMenu());
     }
@@ -249,7 +240,7 @@ public class HoroscopoController : MonoBehaviour
         if (panelOptionActive && nameScene != "SelectGame")
         {
             panelOptionActive = false;
-            menu.Play();
+            SoundUi.Instance.PlaySound(2);
             Menu.GetComponent<Animation>().Play("MenuOut");
             StartCoroutine(AnimationMenuStartScene(nameScene));
         }

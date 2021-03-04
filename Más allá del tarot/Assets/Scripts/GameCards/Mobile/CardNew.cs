@@ -30,6 +30,7 @@ public class CardNew : MonoBehaviour
                 break;
             }
         }
+        
         posFront = pos;
         idCardAPI = classController.ids[pos];
         Name = classController.names[pos];

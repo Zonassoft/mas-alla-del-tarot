@@ -32,11 +32,8 @@ public class GameDadosController : MonoBehaviour
     
     public GameObject dados;
     public GameObject dadosMovil;
-
-    private bool panelOptionActive;
-   
-    AudioSource[] audioSources;
-    private AudioSource revelacion, menu, dadosturn, tilin;
+    public GameObject dado;
+    public GameObject dado2;
     
     [DllImport("__Internal")]
     private static extern void FullScreenFunction();
@@ -48,40 +45,28 @@ public class GameDadosController : MonoBehaviour
 
     public bool clicked;
     private bool d;
-    public GameObject dado;
-    public int num = 7;
+    private bool panelOptionActive;
     
-    public int x;
-    public int y;
-    public int z;
-
     public Vector3 n1;
     public Vector3 n2;
     public Vector3 n3;
     public Vector3 n4;
     public Vector3 n5;
     public Vector3 n6;
+    public Vector3 direction = Vector3.zero;
+    public Vector3 direction2 = Vector3.zero;
     
-    public GameObject dado2;
+    public int num = 7;
     public int numD2 = 7;
+    public float speed;
 
     public Text descriptionBlue;
     public Text descriptionRed;
     public Text numberBlue;
     public Text numberRed;
 
-    public float speed;
-    public Vector3 direction = Vector3.zero;
-    public Vector3 direction2 = Vector3.zero;
-
     private void Start()
     {
-        audioSources = GetComponents<AudioSource>();
-        revelacion = audioSources[0];
-        menu = audioSources[1];
-        dadosturn = audioSources[2];
-        tilin = audioSources[3];
-            
         buttonFullScreen.onClick.AddListener(TaskOnClickMax);
         buttonMinimize.onClick.AddListener(TaskOnClickMin);
         
@@ -162,9 +147,9 @@ public class GameDadosController : MonoBehaviour
     {
         yield return new WaitForSeconds(0.5f);
         
-         #if !UNITY_EDITOR && UNITY_WEBGL
-            FullScreenFunction();
-         #endif
+        #if !UNITY_EDITOR && UNITY_WEBGL
+           FullScreenFunction();
+        #endif
     }
 
     void TaskOnClickMin()
@@ -184,7 +169,8 @@ public class GameDadosController : MonoBehaviour
         {
             clicked = true;
             buttonTurnDices.interactable = false;
-            dadosturn.Play();
+            SoundUi.Instance.PlaySound(9);
+            
             if (!d)
             {
                 d = true;
@@ -209,7 +195,7 @@ public class GameDadosController : MonoBehaviour
     
     public void MusicTilin()
     {
-        tilin.Play();
+        SoundUi.Instance.PlaySound(4);
     }
         
     public void Dado2()
@@ -229,7 +215,6 @@ public class GameDadosController : MonoBehaviour
     public void ButtonReading()
     {
         panelLoading.SetActive(true);
-        
         StartCoroutine(GetToken("Http://82.223.139.65/api/v1/auth/login/", "admin", "destino"));
     }
     
@@ -251,7 +236,6 @@ public class GameDadosController : MonoBehaviour
             Debug.Log(req.downloadHandler.text);
             string jsonString = req.downloadHandler.text;
             TokenAPIDicesPC dataKey = JsonUtility.FromJson<TokenAPIDicesPC>(jsonString);
-            
             StartCoroutine(GetDicesDescription("Http://82.223.139.65/api/v1/client/dado/", dataKey.key));
         }
     }
@@ -279,7 +263,6 @@ public class GameDadosController : MonoBehaviour
             jsonString = Regex.Replace(jsonString, @"(.*)}$","$1");
             
             DicesInfoPC dataDescription = JsonUtility.FromJson<DicesInfoPC>(jsonString);
-            
             string descriptionBlueOk = dataDescription.description_blue;
             string descriptionRedOk = dataDescription.description_red;
             
@@ -292,14 +275,12 @@ public class GameDadosController : MonoBehaviour
             components.SetActive(false);
             dados.SetActive(false);
             panelShowing.SetActive(true);
-            
             descriptionBlue.text = descriptionBlueOk;
             descriptionRed.text = descriptionRedOk;
             numberBlue.text = num.ToString();
             numberRed.text = numD2.ToString();
-            
             panelLoading.SetActive(false);
-            revelacion.Play();
+            SoundUi.Instance.PlaySound(3);
         }
     }
     
@@ -308,13 +289,13 @@ public class GameDadosController : MonoBehaviour
         panelOptionActive = true;
         panelOptions.SetActive(true);
         Menu.GetComponent<Animation>().Play("MenuInDesktop");
-        menu.Play();
+        SoundUi.Instance.PlaySound(2);
     }
     
     public void ButtonQuitOptions()
     {
         panelOptionActive = false;
-        menu.Play();
+        SoundUi.Instance.PlaySound(2);
         Menu.GetComponent<Animation>().Play("MenuOutDesktop");
         panelOptions.SetActive(false);
     }
@@ -330,7 +311,7 @@ public class GameDadosController : MonoBehaviour
         if (panelOptionActive && nameScene != "SelectGame")
         {
             panelOptionActive = false;
-            menu.Play();
+            SoundUi.Instance.PlaySound(2);
             Menu.GetComponent<Animation>().Play("MenuOutDesktop");
             StartCoroutine(AnimationMenuStartScene(nameScene));
         }

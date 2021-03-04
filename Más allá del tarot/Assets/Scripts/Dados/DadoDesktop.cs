@@ -7,12 +7,6 @@ public class DadoDesktop : MonoBehaviour
     private bool finishedAddForce = true;
     public GameObject reference;
     
-    [SerializeField]
-    public float maxForce;
-    
-    [SerializeField]
-    public float minForce;
-
     private void Awake()
     {
         classController = FindObjectOfType<GameDadosController>();
@@ -34,6 +28,7 @@ public class DadoDesktop : MonoBehaviour
         finishedAddForce = false;
         float force = Random.Range(0.3f, 1f); 
         float normalizedTime = 0.0f;
+        
         while (normalizedTime < 1)  
         {
             transform.GetComponent<Rigidbody>().AddForce(reference.transform.up * force);
@@ -42,12 +37,14 @@ public class DadoDesktop : MonoBehaviour
         }
         
         normalizedTime = 0.0f;
+        
         while (normalizedTime < 1)  
         {
             transform.GetComponent<Rigidbody>().AddForce(-reference.transform.up * force);
             normalizedTime += Time.deltaTime / 3f;
             yield return null;
         }
+        
         finishedAddForce = true;
     }
 }

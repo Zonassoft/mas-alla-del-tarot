@@ -5,16 +5,8 @@ using UnityEngine.EventSystems;
 
 public class CardGetter : MonoBehaviour, IDropHandler
 {
+	public PlaySoundButton playSoundClass;
 	private Transform droppedCard;
-	
-	AudioSource[] audioSources;
-	private AudioSource soltar;
-	
-	private void Start()
-	{
-		audioSources = GetComponents<AudioSource>();
-		soltar = audioSources[0];
-	}
 	
 	public void OnDrop (PointerEventData eventData) 
 	{
@@ -25,7 +17,7 @@ public class CardGetter : MonoBehaviour, IDropHandler
 			// Si en esa casilla no hay ninguna carta ya puesta
 			if (transform.childCount == 1) 
 			{
-				soltar.Play();
+				SoundUi.Instance.PlaySound(7);
 				CardDragger.draggedCard = null;
 				droppedCard.SetParent(transform,false);
 			}

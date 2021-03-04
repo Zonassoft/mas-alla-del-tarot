@@ -38,7 +38,6 @@ public class GameDateDesktop : MonoBehaviour
     public GameObject DropDownMonths;
     public GameObject Menu;
     public GameObject panelOptions;
-    
     public GameObject particleNumbers;
     
     public Text description;
@@ -49,6 +48,7 @@ public class GameDateDesktop : MonoBehaviour
     public Text numberCenter;
     public Text day;
     public Text year;
+    public Text titleRevelacion;
     
     private bool panelOptionActive;
     private bool rightDay;
@@ -56,9 +56,6 @@ public class GameDateDesktop : MonoBehaviour
     private bool rightMonth;
     private bool validation = true;
     private bool stopNumberLegth;
-    
-    AudioSource[] audioSources;
-    private AudioSource revelacion, menu;
     
     [DllImport("__Internal")]
     private static extern void FullScreenFunction();
@@ -77,22 +74,14 @@ public class GameDateDesktop : MonoBehaviour
     public Material[] materialParticles = new Material[10];
     public Material[] materialLightParticles = new Material[10];
     
-    
-    
     public Sprite buttonEnnable;
     public Sprite buttonDisable;
 
     private void Start()
     {
         particleNumbers.gameObject.SetActive(true);
-        
-        audioSources = GetComponents<AudioSource>();
-        revelacion = audioSources[0];
-        menu = audioSources[1];
-        
         buttonFullScreen.onClick.AddListener(TaskOnClickMax);
         buttonMinimize.onClick.AddListener(TaskOnClickMin);
-        
         int firstYear = DateTime.Now.Year - 100;
         
         listNumbers.Add("01");
@@ -166,29 +155,23 @@ public class GameDateDesktop : MonoBehaviour
             {
                 buttonShowing.gameObject.GetComponent<Image>().sprite = buttonEnnable;
                 buttonShowing.gameObject.GetComponent<Image>().color = new Color(1f, 1f, 1f, 1f);
-                GameObject textbutton = buttonShowing.gameObject.transform.GetChild(0).gameObject;
-                textbutton.gameObject.GetComponent<Text>().color = new Color(1f, 1f, 1f, 1f);
             }
             else if (!rightDay || !rightYear || !rightMonth)
             {
                 buttonShowing.gameObject.GetComponent<Image>().sprite = buttonDisable;
                 buttonShowing.gameObject.GetComponent<Image>().color = new Color(1f, 1f, 1f, 0.5f);
-                GameObject textbutton = buttonShowing.gameObject.transform.GetChild(0).gameObject;
-                textbutton.gameObject.GetComponent<Text>().color = new Color(0.78f, 0.72f, 0.78f, 1f);
             }
         }
         
         if (!stopNumberLegth)
         {
             numberWrited.Clear();
+            
             for (int i = 0; i < day.text.Length; i++)
-            {
                 numberWrited.Add(day.text[i].ToString());
-            }
+            
             for (int i = 0; i < year.text.Length; i++)
-            {
                 numberWrited.Add(year.text[i].ToString());
-            }
                     
             ActivateNumber();
         }
@@ -204,8 +187,8 @@ public class GameDateDesktop : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         
         #if !UNITY_EDITOR && UNITY_WEBGL
-            FullScreenFunction();
-         #endif
+           FullScreenFunction();
+        #endif
     }
 
     void TaskOnClickMin()
@@ -299,7 +282,6 @@ public class GameDateDesktop : MonoBehaviour
             validation = false;
             stopNumberLegth = true;
             panelLoading.SetActive(true);
-            
             StartCoroutine(GetToken("Http://82.223.139.65/api/v1/auth/login/", "admin", "destino"));
         }
         else
@@ -314,7 +296,6 @@ public class GameDateDesktop : MonoBehaviour
         msgButton.SetActive(true);
         
         yield return new WaitForSeconds(2f);
-        
         msgButton.SetActive(false);
     }
     
@@ -338,10 +319,7 @@ public class GameDateDesktop : MonoBehaviour
             TokenAPIDatePC dataKey = JsonUtility.FromJson<TokenAPIDatePC>(jsonString);
             
             int monthUser = DropDownMonths.transform.GetComponent<Dropdown>().value;
-            
             string date = dayAPI + "/" + monthUser + "/" + yearAPI;
-            Debug.Log(date);
-            
             StartCoroutine(GetDateDescription("http://82.223.139.65/api/v1/client/date/", date, dataKey.key));
         }
     }
@@ -371,27 +349,22 @@ public class GameDateDesktop : MonoBehaviour
                 jsonString = Regex.Replace(jsonString, @"(.*)}$","$1");
                 
                 DateInfoPC data = JsonUtility.FromJson<DateInfoPC>(jsonString);
-            
                 numberCenter.text = data.number.ToString();
-                
                 string descriptionNumberOk = data.description_number;
             
                 if (descriptionNumberOk.Contains("\u2028"))
                     descriptionNumberOk = descriptionNumberOk.Replace("\u2028", " ");
 
                 description.text = descriptionNumberOk;
-                
                 numberDescription.text = data.number.ToString();
                 signHoroscopo.text = data.zodiac_sign;
                 zodiacSingDescription.text = data.zodiac_sign;
-                
                 string descriptionZodiacOk = data.description_zodiac;
                 
                 if (descriptionZodiacOk.Contains("\u2028"))
                     descriptionZodiacOk = descriptionZodiacOk.Replace("\u2028", " ");
 
                 descriptionHoroscopo.text = descriptionZodiacOk;
-                
                 componentes.SetActive(false);
                 buttonRestart.SetActive(true);
                 panelLoading.SetActive(false);
@@ -420,7 +393,7 @@ public class GameDateDesktop : MonoBehaviour
     {
         yield return new WaitForSeconds(1f);
         panelDescription.SetActive(true);
-        revelacion.Play();
+        SoundUi.Instance.PlaySound(3);
     }
     
     public void ButtonHoroscopo()
@@ -432,8 +405,9 @@ public class GameDateDesktop : MonoBehaviour
     {
         yield return new WaitForSeconds(0.5f);
         SignAndZodiacName.SetActive(false);
+        titleRevelacion.text = "Según la fecha de nacimiento tu signo es";
         panelHoroscopo.SetActive(true);
-        revelacion.Play();
+        SoundUi.Instance.PlaySound(3);
     }
     
     public void ButtonOptions()
@@ -441,13 +415,13 @@ public class GameDateDesktop : MonoBehaviour
         panelOptionActive = true;
         panelOptions.SetActive(true);
         Menu.GetComponent<Animation>().Play("MenuInDesktop");
-        menu.Play();
+        SoundUi.Instance.PlaySound(2);
     }
     
     public void ButtonQuitOptions()
     {
         panelOptionActive = false;
-        menu.Play();
+        SoundUi.Instance.PlaySound(2);
         Menu.GetComponent<Animation>().Play("MenuOutDesktop");
         panelOptions.SetActive(false);
     }
@@ -463,7 +437,7 @@ public class GameDateDesktop : MonoBehaviour
         if (panelOptionActive && nameScene != "SelectGame")
         {
             panelOptionActive = false;
-            menu.Play();
+            SoundUi.Instance.PlaySound(2);
             Menu.GetComponent<Animation>().Play("MenuOutDesktop");
             StartCoroutine(AnimationMenuStartScene(nameScene));
         }

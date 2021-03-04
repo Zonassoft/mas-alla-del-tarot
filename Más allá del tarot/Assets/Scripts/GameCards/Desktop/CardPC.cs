@@ -29,6 +29,7 @@ public class CardPC : MonoBehaviour
                 break;
             }
         }
+        
         posFront = pos;
         idCardAPI = classController.ids[pos];
         Name = classController.names[pos];

@@ -9,7 +9,7 @@ public class ScreenStart : MonoBehaviour
 {
     public Button startButton;
     public Canvas canvasGame;
-    public GameObject textDestiny;
+    public GameObject logo;
     
     public GameObject panelTurnScreen;
     private bool panelTurnScreenActive;
@@ -28,7 +28,7 @@ public class ScreenStart : MonoBehaviour
 
     void Start()
     {
-        if (canvasGame.transform.GetComponent<RectTransform>().rect.width < textDestiny.transform.GetComponent<RectTransform>().rect.width)
+        if (canvasGame.transform.GetComponent<RectTransform>().rect.width < logo.transform.GetComponent<RectTransform>().rect.width)
             canvasGame.transform.GetComponent<CanvasScaler>().matchWidthOrHeight = 0.8f;
         
         startButton.onClick.AddListener(TaskOnClick);

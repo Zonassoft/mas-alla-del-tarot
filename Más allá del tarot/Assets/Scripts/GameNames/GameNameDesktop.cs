@@ -50,11 +50,6 @@ public class GameNameDesktop : MonoBehaviour
     public Material[] materialLightParticles = new Material[26];
     private List<string> letterWrited = new List<string>();    // contiene las letras que han sido escritas
     
-    public Sprite[] iconSex = new Sprite[4];
-    
-    AudioSource[] audioSources;
-    private AudioSource revelacion, menu;
-    
     [DllImport("__Internal")]
     private static extern void FullScreenFunction();
     
@@ -68,11 +63,6 @@ public class GameNameDesktop : MonoBehaviour
     private void Start()
     {
         particleLetters.gameObject.SetActive(true);
-        
-        audioSources = GetComponents<AudioSource>();
-        revelacion = audioSources[0];
-        menu = audioSources[1];
-        
         buttonFullScreen.onClick.AddListener(TaskOnClickMax);
         buttonMinimize.onClick.AddListener(TaskOnClickMin);
     }
@@ -83,25 +73,20 @@ public class GameNameDesktop : MonoBehaviour
         {
             buttonContinue.gameObject.GetComponent<Image>().sprite = buttonEnnable;
             buttonContinue.gameObject.GetComponent<Image>().color = new Color(1f, 1f, 1f, 1f);
-            GameObject textbutton = buttonContinue.gameObject.transform.GetChild(0).gameObject;
-            textbutton.gameObject.GetComponent<Text>().color = new Color(1f, 1f, 1f, 1f);
         }
 
         if (nameUser.text.Length == 0)
         {
             buttonContinue.gameObject.GetComponent<Image>().sprite = buttonDisable;
             buttonContinue.gameObject.GetComponent<Image>().color = new Color(1f, 1f, 1f, 0.5f);
-            GameObject textbutton = buttonContinue.gameObject.transform.GetChild(0).gameObject;
-            textbutton.gameObject.GetComponent<Text>().color = new Color(0.78f, 0.72f, 0.78f, 1f);
         }
 
         if (!stopNameLegth)
         {
             letterWrited.Clear();
+            
             for (int i = 0; i < nameUser.text.Length; i++)
-            {
                 letterWrited.Add(nameUser.text[i].ToString());
-            }
             
             ActivateLetter();
         }
@@ -127,9 +112,9 @@ public class GameNameDesktop : MonoBehaviour
     {
         yield return new WaitForSeconds(0.5f);
         
-         #if !UNITY_EDITOR && UNITY_WEBGL
-            FullScreenFunction();
-         #endif
+        #if !UNITY_EDITOR && UNITY_WEBGL
+           FullScreenFunction();
+        #endif
     }
 
     void TaskOnClickMin()
@@ -377,35 +362,23 @@ public class GameNameDesktop : MonoBehaviour
 
     public void ButtonSexFemale()
     {
-        sexFemale = true;
-
         GameObject borderNoSelected = buttonMale.transform.GetChild(2).gameObject;
         borderNoSelected.SetActive(false);
-        GameObject textNoSelected = buttonMale.transform.GetChild(1).gameObject;
-        textNoSelected.GetComponent<Text>().color = new Color(0.09f, 0.64f, 0.9f, 1f);
-        
         GameObject borderSelected = buttonFemale.transform.GetChild(2).gameObject;
         borderSelected.SetActive(true);
-        GameObject textSelected = buttonFemale.transform.GetChild(1).gameObject;
-        textSelected.GetComponent<Text>().color = new Color(1, 1, 1, 1);
         
+        sexFemale = true;
         buttonShowingSelectGender.SetActive(true);
     }
     
     public void ButtonSexMale()
     {
-        sexFemale = false;
-        
         GameObject borderNoSelected = buttonFemale.transform.GetChild(2).gameObject;
         borderNoSelected.SetActive(false);
-        GameObject textNoSelected = buttonFemale.transform.GetChild(1).gameObject;
-        textNoSelected.GetComponent<Text>().color = new Color(0.09f, 0.64f, 0.9f, 1f);
-        
         GameObject borderSelected = buttonMale.transform.GetChild(2).gameObject;
         borderSelected.SetActive(true);
-        GameObject textSelected = buttonMale.transform.GetChild(1).gameObject;
-        textSelected.GetComponent<Text>().color = new Color(1, 1, 1, 1);
         
+        sexFemale = false;
         buttonShowingSelectGender.SetActive(true);
     }
 
@@ -437,7 +410,6 @@ public class GameNameDesktop : MonoBehaviour
             Debug.Log(req.downloadHandler.text);
             string jsonString = req.downloadHandler.text;
             TokenAPINamePC dataKey = JsonUtility.FromJson<TokenAPINamePC>(jsonString);
-            
             StartCoroutine(GetNameDescription("Http://82.223.139.65/api/v1/client/name/", gender, dataKey.key));
         }
     }
@@ -461,22 +433,19 @@ public class GameNameDesktop : MonoBehaviour
         {
             Debug.Log(req.downloadHandler.text);
             string jsonString = req.downloadHandler.text;
-            
             NameInfoPC dataDescription = JsonUtility.FromJson<NameInfoPC>(jsonString);
-            
             string descriptionOk = dataDescription.detail;
             
             if (descriptionOk.Contains("\u2028"))
                 descriptionOk = descriptionOk.Replace("\u2028", " ");
 
             description.text = descriptionOk;
-            
             panelSex.SetActive(false);
             buttonRestart.SetActive(true);
             components.SetActive(false);
             LoadingPanel.SetActive(false);
             panelShowing.SetActive(true);
-            revelacion.Play();
+            SoundUi.Instance.PlaySound(3);
         }
     }
     
@@ -485,13 +454,13 @@ public class GameNameDesktop : MonoBehaviour
         panelOptionActive = true;
         panelOptions.SetActive(true);
         Menu.GetComponent<Animation>().Play("MenuInDesktop");
-        menu.Play();
+        SoundUi.Instance.PlaySound(2);
     }
     
     public void ButtonQuitOptions()
     {
         panelOptionActive = false;
-        menu.Play();
+        SoundUi.Instance.PlaySound(2);
         Menu.GetComponent<Animation>().Play("MenuOutDesktop");
         panelOptions.SetActive(false);
     }
@@ -507,7 +476,7 @@ public class GameNameDesktop : MonoBehaviour
         if (panelOptionActive && nameScene != "SelectGame")
         {
             panelOptionActive = false;
-            menu.Play();
+            SoundUi.Instance.PlaySound(2);
             Menu.GetComponent<Animation>().Play("MenuOutDesktop");
             StartCoroutine(AnimationMenuStartScene(nameScene));
         }

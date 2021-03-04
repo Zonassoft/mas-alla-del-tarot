@@ -30,16 +30,12 @@ public class GameNamesController : MonoBehaviour
     public GameObject panelSex;
     public GameObject Menu;
     public GameObject LoadingPanel;
-    public GameObject buttonShowingSelectGender;
     public GameObject buttonRestart;
     public GameObject components;
-    public GameObject buttonFemale;
-    public GameObject buttonMale;
     public GameObject ImgFemale;
     public GameObject ImgMale;
     
     public GameObject particleLetters;
-    
     public GameObject layoutName2;
     
     public bool sexFemale = true;
@@ -57,11 +53,6 @@ public class GameNamesController : MonoBehaviour
     public Material[] materialLightParticles = new Material[26];
     private List<string> letterWrited = new List<string>();    // contiene las letras que han sido escritas
     
-    public Sprite[] iconSex = new Sprite[4];
-    
-    AudioSource[] audioSources;
-    private AudioSource revelacion, menu;
-    
     public Button buttonFullScreen;
     public Button buttonMinimize;
     public Button buttonContinue;
@@ -76,14 +67,8 @@ public class GameNamesController : MonoBehaviour
     private void Start()
     {
         particleLetters.gameObject.SetActive(true);
-        
-        audioSources = GetComponents<AudioSource>();
-        revelacion = audioSources[0];
-        menu = audioSources[1];
-
         buttonFullScreen.onClick.AddListener(TaskOnClickMax);
         buttonMinimize.onClick.AddListener(TaskOnClickMin);
-        
         sexFemale = true;
     }
     
@@ -93,25 +78,20 @@ public class GameNamesController : MonoBehaviour
         {
             buttonContinue.gameObject.GetComponent<Image>().sprite = buttonEnnable;
             buttonContinue.gameObject.GetComponent<Image>().color = new Color(1f, 1f, 1f, 1f);
-            GameObject textbutton = buttonContinue.gameObject.transform.GetChild(0).gameObject;
-            textbutton.gameObject.GetComponent<Text>().color = new Color(1f, 1f, 1f, 1f);
         }
 
         if (nameUser.text.Length == 0)
         {
             buttonContinue.gameObject.GetComponent<Image>().sprite = buttonDisable;
             buttonContinue.gameObject.GetComponent<Image>().color = new Color(1f, 1f, 1f, 0.5f);
-            GameObject textbutton = buttonContinue.gameObject.transform.GetChild(0).gameObject;
-            textbutton.gameObject.GetComponent<Text>().color = new Color(0.78f, 0.72f, 0.78f, 1f);
         }
         
         if (!stopNameLegth)
         {
             letterWrited.Clear();
+            
             for (int i = 0; i < nameUser.text.Length; i++)
-            {
                 letterWrited.Add(nameUser.text[i].ToString());
-            }
             
             ActivateLetter();
         }
@@ -137,9 +117,9 @@ public class GameNamesController : MonoBehaviour
     {
         yield return new WaitForSeconds(0.5f);
         
-         #if !UNITY_EDITOR && UNITY_WEBGL
-            FullScreenFunction();
-         #endif
+        #if !UNITY_EDITOR && UNITY_WEBGL
+           FullScreenFunction();
+        #endif
     }
 
     void TaskOnClickMin()
@@ -413,26 +393,6 @@ public class GameNamesController : MonoBehaviour
         }
     }
 
-    public void ButtonSexFemale()
-    {
-        sexFemale = true;
-        buttonMale.transform.localScale = new Vector3(1f, 1f, 1f);
-        buttonMale.gameObject.GetComponent<Image>().sprite = iconSex[2];
-        buttonFemale.transform.localScale = new Vector3(1.3f, 1.3f, 1f);
-        buttonFemale.gameObject.GetComponent<Image>().sprite = iconSex[1];
-        buttonShowingSelectGender.SetActive(true);
-    }
-    
-    public void ButtonSexMale()
-    {
-        sexFemale = false;
-        buttonFemale.transform.localScale = new Vector3(1f, 1f, 1f);
-        buttonFemale.gameObject.GetComponent<Image>().sprite = iconSex[3];
-        buttonMale.transform.localScale = new Vector3(1.3f, 1.3f, 1f);
-        buttonMale.gameObject.GetComponent<Image>().sprite = iconSex[0];
-        buttonShowingSelectGender.SetActive(true);
-    }
-
     public void ButtonShowing2()
     {
         LoadingPanel.SetActive(true);
@@ -461,7 +421,6 @@ public class GameNamesController : MonoBehaviour
             Debug.Log(req.downloadHandler.text);
             string jsonString = req.downloadHandler.text;
             TokenAPIName dataKey = JsonUtility.FromJson<TokenAPIName>(jsonString);
-            
             StartCoroutine(GetNameDescription("Http://82.223.139.65/api/v1/client/name/", gender, dataKey.key));
         }
     }
@@ -485,22 +444,19 @@ public class GameNamesController : MonoBehaviour
         {
             Debug.Log(req.downloadHandler.text);
             string jsonString = req.downloadHandler.text;
-            
             NameInfo dataDescription = JsonUtility.FromJson<NameInfo>(jsonString);
-            
             string descriptionOk = dataDescription.detail;
             
             if (descriptionOk.Contains("\u2028"))
                 descriptionOk = descriptionOk.Replace("\u2028", " ");
 
             description.text = descriptionOk;
-            
             panelSex.SetActive(false);
             buttonRestart.SetActive(true);
             components.SetActive(false);
             LoadingPanel.SetActive(false);
             panelShowing.SetActive(true);
-            revelacion.Play();
+            SoundUi.Instance.PlaySound(3);
         }
     }
     
@@ -509,13 +465,13 @@ public class GameNamesController : MonoBehaviour
         panelOptionActive = true;
         panelOptions.SetActive(true);
         Menu.GetComponent<Animation>().Play("MenuIn");
-        menu.Play();
+        SoundUi.Instance.PlaySound(2);
     }
     
     public void ButtonQuitOptions()
     {
         panelOptionActive = false;
-        menu.Play();
+        SoundUi.Instance.PlaySound(2);
         Menu.GetComponent<Animation>().Play("MenuOut");
         StartCoroutine(AnimationMenu());
     }
@@ -537,7 +493,7 @@ public class GameNamesController : MonoBehaviour
         if (panelOptionActive && nameScene != "SelectGame")
         {
             panelOptionActive = false;
-            menu.Play();
+            SoundUi.Instance.PlaySound(2);
             Menu.GetComponent<Animation>().Play("MenuOut");
             StartCoroutine(AnimationMenuStartScene(nameScene));
         }
