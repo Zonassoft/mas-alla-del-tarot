@@ -3,16 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using System.Runtime.InteropServices;
+//using System.Runtime.InteropServices;
 using System.Text.RegularExpressions;
 using UnityEngine.Networking;
 using UnityEngine.SceneManagement;
-
-[Serializable]
-public class TokenAPIHoroscopo
-{
-    public string key;
-}
 
 [Serializable]
 public class HoroscopoInfo
@@ -43,17 +37,17 @@ public class HoroscopoControllerDesktop : MonoBehaviour
                                  "(21 junio-22 julio)", "(23 julio-22 agosto)", "(23 agosto-22 septiembre)", "(23 septiembre-22 octubre)", "(23 octubre-21 noviembre)", 
                                  "(22 noviembre-21 diciembre)", "(22 diciembre-19 enero)"};
    
-    [DllImport("__Internal")]
-    private static extern void FullScreenFunction();
+//    [DllImport("__Internal")]
+//    private static extern void FullScreenFunction();
     
     public Button buttonFullScreen;
     public Button buttonMinimize;
     
-    private void Start()
-    {
-        buttonFullScreen.onClick.AddListener(TaskOnClickMax);
-        buttonMinimize.onClick.AddListener(TaskOnClickMin);
-    }
+//    private void Start()
+//    {
+//        buttonFullScreen.onClick.AddListener(TaskOnClickMax);
+//        buttonMinimize.onClick.AddListener(TaskOnClickMin);
+//    }
     
     private void Update()
     {
@@ -69,85 +63,63 @@ public class HoroscopoControllerDesktop : MonoBehaviour
         }
     }
     
-    void TaskOnClickMax()
-    {
-        StartCoroutine(WaitMax());
-    }
-
-    public IEnumerator WaitMax()
-    {
-        yield return new WaitForSeconds(0.5f);
-        
-        #if !UNITY_EDITOR && UNITY_WEBGL
-           FullScreenFunction();
-        #endif
-    }
-
-    void TaskOnClickMin()
-    {
-        StartCoroutine(WaitMin());
-    }
-    
-    public IEnumerator WaitMin()
-    {
-        yield return new WaitForSeconds(0.5f);
-        Screen.fullScreen = !Screen.fullScreen;
-    }
+//    void TaskOnClickMax()
+//    {
+//        StartCoroutine(WaitMax());
+//    }
+//
+//    public IEnumerator WaitMax()
+//    {
+//        yield return new WaitForSeconds(0.5f);
+//        SoundUi.Instance.FullScreenMethod();
+//        
+////        #if !UNITY_EDITOR && UNITY_WEBGL
+////           FullScreenFunction();
+////        #endif
+//    }
+//
+//    void TaskOnClickMin()
+//    {
+//        StartCoroutine(WaitMin());
+//    }
+//    
+//    public IEnumerator WaitMin()
+//    {
+//        yield return new WaitForSeconds(0.5f);
+//        Screen.fullScreen = !Screen.fullScreen;
+//    }
     
     public void ViewZodiac(int posSign)
     {
         panelLoading.SetActive(true);
-        StartCoroutine(GetToken("Http://82.223.139.65/api/v1/auth/login/", "admin", "destino", posSign));
-    }
-    
-    public IEnumerator GetToken(string url, string username, string password, int posSign)
-    {
-        WWWForm form = new WWWForm();
-        form.AddField("username", username);
-        form.AddField("password", password);
-        
-        UnityWebRequest req = UnityWebRequest.Post(url, form);
-        yield return req.SendWebRequest();
-        
-        if (req.isNetworkError || req.isHttpError)
-        {
-            Debug.Log(req.error);
-        }
-        else
-        {
-            Debug.Log(req.downloadHandler.text);
-            string jsonString = req.downloadHandler.text;
-            TokenAPIHoroscopo dataKey = JsonUtility.FromJson<TokenAPIHoroscopo>(jsonString);
-
-            string date = DateTime.Now.Day + "/" + DateTime.Now.Month + "/" + DateTime.Now.Year;
+        string date = DateTime.Now.Day + "/" + DateTime.Now.Month + "/" + DateTime.Now.Year;
             
-            if (posSign == 0)
-                date = "25/1/" + DateTime.Now.Year;
-            if (posSign == 1)
-                date = "25/2/" + DateTime.Now.Year;
-            if (posSign == 2)
-                date = "25/3/" + DateTime.Now.Year;
-            if (posSign == 3)
-                date = "25/4/" + DateTime.Now.Year;
-            if (posSign == 4)
-                date = "25/5/" + DateTime.Now.Year;
-            if (posSign == 5)
-                date = "25/6/" + DateTime.Now.Year;
-            if (posSign == 6)
-                date = "25/7/" + DateTime.Now.Year;
-            if (posSign == 7)
-                date = "25/8/" + DateTime.Now.Year;
-            if (posSign == 8)
-                date = "25/9/" + DateTime.Now.Year;
-            if (posSign == 9)
-                date = "25/10/" + DateTime.Now.Year;
-            if (posSign == 10)
-                date = "25/11/" + DateTime.Now.Year;
-            if (posSign == 11)
-                date = "25/12/" + DateTime.Now.Year;
+        if (posSign == 0)
+            date = "25/1/" + DateTime.Now.Year;
+        if (posSign == 1)
+            date = "25/2/" + DateTime.Now.Year;
+        if (posSign == 2)
+            date = "25/3/" + DateTime.Now.Year;
+        if (posSign == 3)
+            date = "25/4/" + DateTime.Now.Year;
+        if (posSign == 4)
+            date = "25/5/" + DateTime.Now.Year;
+        if (posSign == 5)
+            date = "25/6/" + DateTime.Now.Year;
+        if (posSign == 6)
+            date = "25/7/" + DateTime.Now.Year;
+        if (posSign == 7)
+            date = "25/8/" + DateTime.Now.Year;
+        if (posSign == 8)
+            date = "25/9/" + DateTime.Now.Year;
+        if (posSign == 9)
+            date = "25/10/" + DateTime.Now.Year;
+        if (posSign == 10)
+            date = "25/11/" + DateTime.Now.Year;
+        if (posSign == 11)
+            date = "25/12/" + DateTime.Now.Year;
             
-            StartCoroutine(GetHoroscopoDescription("Http://82.223.139.65/api/v1/client/date/", date, dataKey.key, posSign));
-        }
+        StartCoroutine(GetHoroscopoDescription("Http://82.223.139.65/api/v1/client/date/", date, SoundUi.Instance.TokenAPI, posSign));
     }
     
     public IEnumerator GetHoroscopoDescription(string url, string date, string token, int posSign)
@@ -190,16 +162,9 @@ public class HoroscopoControllerDesktop : MonoBehaviour
             nameSignSelected.text = nameSign[posSign];
             dateSignSelected.text = dateSign[posSign];
             
-            for (int i = 0; i < 12; i++)
-            {
-                GameObject childImg = gameObjectImageSign.transform.GetChild(i).gameObject;
-
-                if (i == posSign)
-                    childImg.SetActive(true);
-                else
-                    childImg.SetActive(false);
-            }
-
+            GameObject childImg = gameObjectImageSign.transform.GetChild(posSign).gameObject;
+            childImg.SetActive(true);
+            
             panelButtons.SetActive(false);
             panelReading.SetActive(true);
             panelLoading.SetActive(false);
@@ -209,42 +174,21 @@ public class HoroscopoControllerDesktop : MonoBehaviour
     
     public void ButtonOptions()
     {
-        panelOptionActive = true;
-        panelOptions.SetActive(true);
-        Menu.GetComponent<Animation>().Play("MenuInDesktop");
-        SoundUi.Instance.PlaySound(2);
+        SoundUi.Instance.Options(panelOptions, Menu, "MenuInDesktop");
     }
     
     public void ButtonQuitOptions()
     {
-        panelOptionActive = false;
-        SoundUi.Instance.PlaySound(2);
-        Menu.GetComponent<Animation>().Play("MenuOutDesktop");
-        panelOptions.SetActive(false);
+        SoundUi.Instance.QuitOptions(panelOptions, Menu, "MenuOutDesktop");
     }
 
-    public IEnumerator AnimationMenuStartScene(string nameScene)
-    {
-        yield return new WaitForSeconds(0.7f);
-        SceneManager.LoadScene	(nameScene); 
-    }
-    
     public void StartScene(string nameScene)
     {
-        if (panelOptionActive && nameScene != "SelectGame")
-        {
-            panelOptionActive = false;
-            SoundUi.Instance.PlaySound(2);
-            Menu.GetComponent<Animation>().Play("MenuOutDesktop");
-            StartCoroutine(AnimationMenuStartScene(nameScene));
-        }
-        else if (panelOptionActive && nameScene == "SelectGame")
-        {
-            SceneManager.LoadScene(nameScene);
-        }
-        else if (!panelOptionActive)
-        {
-            SceneManager.LoadScene(nameScene);
-        }
+        SoundUi.Instance.StartScene(nameScene, Menu, "MenuOutDesktop");
+    }
+    
+    public void Restart(string nameScene)
+    {
+        SceneManager.LoadScene	(nameScene);
     }
 }

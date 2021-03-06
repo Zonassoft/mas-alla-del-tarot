@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using System.Runtime.InteropServices;
+//using System.Runtime.InteropServices;
 
 public class ScreenSelect : MonoBehaviour
 {
@@ -15,43 +15,44 @@ public class ScreenSelect : MonoBehaviour
     public GameObject panelTurnGray;
     private bool panelTurnGrayActive;
     
-    [DllImport("__Internal")]
-    private static extern bool IsMobile();
-    
-    [DllImport("__Internal")]
-    private static extern bool CheckOrientation();
-    
-    [DllImport("__Internal")]
-    private static extern bool CheckOrientationIOS();
+//    [DllImport("__Internal")]
+//    private static extern bool IsMobile();
+//    
+//    [DllImport("__Internal")]
+//    private static extern bool CheckOrientation();
+//    
+//    [DllImport("__Internal")]
+//    private static extern bool CheckOrientationIOS();
  
-    public bool isMobile()
-    {
-         #if !UNITY_EDITOR && UNITY_WEBGL
-             return IsMobile();
-         #endif
-         return false;
-    }
-    
-    public bool isPortraitScreen()
-    {
-        if (SystemInfo.operatingSystem.Contains("Android"))
-        {
-             #if !UNITY_EDITOR && UNITY_WEBGL
-                 return CheckOrientation();
-             #endif
-        }
-        else if (SystemInfo.operatingSystem.Contains("iOS"))
-        {
-             #if !UNITY_EDITOR && UNITY_WEBGL
-                 return CheckOrientationIOS();
-             #endif
-        }
-        return false;
-    }
+//    public bool isMobile()
+//    {
+//         #if !UNITY_EDITOR && UNITY_WEBGL
+//             return IsMobile();
+//         #endif
+//         return false;
+//    }
+//    
+//    public bool isPortraitScreen()
+//    {
+//        if (SystemInfo.operatingSystem.Contains("Android"))
+//        {
+//             #if !UNITY_EDITOR && UNITY_WEBGL
+//                 return CheckOrientation();
+//             #endif
+//        }
+//        else if (SystemInfo.operatingSystem.Contains("iOS"))
+//        {
+//             #if !UNITY_EDITOR && UNITY_WEBGL
+//                 return CheckOrientationIOS();
+//             #endif
+//        }
+//        return false;
+//    }
     
     void Start()
     {
-        if (isMobile() || IsPad() || SystemInfo.deviceName.Contains("iPad"))
+        //if (SoundUi.Instance.isMobile() || SoundUi.Instance.IsPad() || SystemInfo.deviceName.Contains("iPad"))
+        if (SoundUi.Instance.varIsMobile)
         {
             ScreenMobile.SetActive(true);
             ScreenDesktop.SetActive(false);
@@ -63,17 +64,18 @@ public class ScreenSelect : MonoBehaviour
 
     private void Update()
     {
-        if (isMobile() || IsPad() || SystemInfo.deviceName.Contains("iPad"))
+        //if (SoundUi.Instance.isMobile() || SoundUi.Instance.IsPad() || SystemInfo.deviceName.Contains("iPad"))
+        if (SoundUi.Instance.varIsMobile)
         {
-            if (Screen.fullScreen && !isPortraitScreen())
+            if (Screen.fullScreen && !SoundUi.Instance.isPortraitScreen())
             {
                 panelTurnBlack.SetActive(true);
             }
-            else if (!Screen.fullScreen && !isPortraitScreen())
+            else if (!Screen.fullScreen && !SoundUi.Instance.isPortraitScreen())
             {
                 panelTurnGray.SetActive(true);
             }
-            else if (isPortraitScreen())
+            else if (SoundUi.Instance.isPortraitScreen())
             {
                 panelTurnBlack.SetActive(false);
                 panelTurnGray.SetActive(false);
@@ -81,15 +83,25 @@ public class ScreenSelect : MonoBehaviour
         }
     }
     
-    public static bool IsPad()
+//    public static bool IsPad()
+//    {
+//        string type = SystemInfo.deviceModel.ToLower().Trim();
+//
+//        if (type.Substring(0, 3) == "iph")
+//            return false;
+//        if (type.Substring(0, 3) == "ipa")
+//            return true;
+//        else
+//            return false;
+//    }
+    
+    public void ButtonMax()
     {
-        string type = SystemInfo.deviceModel.ToLower().Trim();
-
-        if (type.Substring(0, 3) == "iph")
-            return false;
-        if (type.Substring(0, 3) == "ipa")
-            return true;
-        else
-            return false;
+        SoundUi.Instance.FullScreenMethod();
+    }
+    
+    public void ButtonMin()
+    {
+        Screen.fullScreen = !Screen.fullScreen;
     }
 }

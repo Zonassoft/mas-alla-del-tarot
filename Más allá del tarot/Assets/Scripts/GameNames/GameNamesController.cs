@@ -8,14 +8,7 @@ using UnityEngine.Networking;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using Random = System.Random;
-using System.Runtime.InteropServices;
-
-
-[Serializable]
-public class TokenAPIName
-{
-    public string key;
-}
+//using System.Runtime.InteropServices;
 
 [Serializable]
 public class NameInfo
@@ -61,14 +54,14 @@ public class GameNamesController : MonoBehaviour
     public Sprite buttonEnnable;
     public Sprite buttonDisable;
     
-    [DllImport("__Internal")]
-    private static extern void FullScreenFunction();
+//    [DllImport("__Internal")]
+//    private static extern void FullScreenFunction();
     
     private void Start()
     {
         particleLetters.gameObject.SetActive(true);
-        buttonFullScreen.onClick.AddListener(TaskOnClickMax);
-        buttonMinimize.onClick.AddListener(TaskOnClickMin);
+//        buttonFullScreen.onClick.AddListener(TaskOnClickMax);
+//        buttonMinimize.onClick.AddListener(TaskOnClickMin);
         sexFemale = true;
     }
     
@@ -108,30 +101,31 @@ public class GameNamesController : MonoBehaviour
         }
     }
     
-    void TaskOnClickMax()
-    {
-        StartCoroutine(WaitMax());
-    }
-
-    public IEnumerator WaitMax()
-    {
-        yield return new WaitForSeconds(0.5f);
-        
-        #if !UNITY_EDITOR && UNITY_WEBGL
-           FullScreenFunction();
-        #endif
-    }
-
-    void TaskOnClickMin()
-    {
-        StartCoroutine(WaitMin());
-    }
-    
-    public IEnumerator WaitMin()
-    {
-        yield return new WaitForSeconds(0.5f);
-        Screen.fullScreen = !Screen.fullScreen;
-    }
+//    void TaskOnClickMax()
+//    {
+//        StartCoroutine(WaitMax());
+//    }
+//
+//    public IEnumerator WaitMax()
+//    {
+//        yield return new WaitForSeconds(0.5f);
+//        SoundUi.Instance.FullScreenMethod();
+//        
+////        #if !UNITY_EDITOR && UNITY_WEBGL
+////           FullScreenFunction();
+////        #endif
+//    }
+//
+//    void TaskOnClickMin()
+//    {
+//        StartCoroutine(WaitMin());
+//    }
+//    
+//    public IEnumerator WaitMin()
+//    {
+//        yield return new WaitForSeconds(0.5f);
+//        Screen.fullScreen = !Screen.fullScreen;
+//    }
     
     public void ActivateLetter()
     {
@@ -371,7 +365,7 @@ public class GameNamesController : MonoBehaviour
         StartCoroutine(TurnCard());
     }
 
-    IEnumerator TurnCard()
+    public IEnumerator TurnCard()
     {
         yield return new WaitForSeconds(0.5f);
         
@@ -398,41 +392,19 @@ public class GameNamesController : MonoBehaviour
         LoadingPanel.SetActive(true);
         
         if(sexFemale)
-            StartCoroutine(GetToken("Http://82.223.139.65/api/v1/auth/login/", "admin", "destino", "Femenino"));
+            StartCoroutine(GetNameDescription("Femenino"));
         else
-            StartCoroutine(GetToken("Http://82.223.139.65/api/v1/auth/login/", "admin", "destino", "Masculino"));
+            StartCoroutine(GetNameDescription("Masculino"));
     }
 
-    public IEnumerator GetToken(string url, string username, string password, string gender)
-    {
-        WWWForm form = new WWWForm();
-        form.AddField("username", username);
-        form.AddField("password", password);
-        
-        UnityWebRequest req = UnityWebRequest.Post(url, form);
-        yield return req.SendWebRequest();
-        
-        if (req.isNetworkError || req.isHttpError)
-        {
-            Debug.Log(req.error);
-        }
-        else
-        {
-            Debug.Log(req.downloadHandler.text);
-            string jsonString = req.downloadHandler.text;
-            TokenAPIName dataKey = JsonUtility.FromJson<TokenAPIName>(jsonString);
-            StartCoroutine(GetNameDescription("Http://82.223.139.65/api/v1/client/name/", gender, dataKey.key));
-        }
-    }
-    
-    public IEnumerator GetNameDescription(string url, string gender, string token)
+    public IEnumerator GetNameDescription(string gender)
     {
         WWWForm form = new WWWForm();
         form.AddField("name", nameUser.text);
         form.AddField("gender", gender);
         
-        UnityWebRequest req = UnityWebRequest.Post(url, form);
-        req.SetRequestHeader("Authorization", "Token " + token);
+        UnityWebRequest req = UnityWebRequest.Post(SoundUi.Instance.urlName, form);
+        req.SetRequestHeader("Authorization", "Token " + SoundUi.Instance.TokenAPI);
         
         yield return req.SendWebRequest();
         
@@ -462,48 +434,21 @@ public class GameNamesController : MonoBehaviour
     
     public void ButtonOptions()
     {
-        panelOptionActive = true;
-        panelOptions.SetActive(true);
-        Menu.GetComponent<Animation>().Play("MenuIn");
-        SoundUi.Instance.PlaySound(2);
+        SoundUi.Instance.Options(panelOptions, Menu, "MenuIn");
     }
     
     public void ButtonQuitOptions()
     {
-        panelOptionActive = false;
-        SoundUi.Instance.PlaySound(2);
-        Menu.GetComponent<Animation>().Play("MenuOut");
-        StartCoroutine(AnimationMenu());
-    }
-
-    public IEnumerator AnimationMenu()
-    {
-        yield return new WaitForSeconds(1f);
-        panelOptions.SetActive(false);
-    }
-    
-    public IEnumerator AnimationMenuStartScene(string nameScene)
-    {
-        yield return new WaitForSeconds(1f);
-        SceneManager.LoadScene	(nameScene); 
+        SoundUi.Instance.QuitOptions(panelOptions, Menu, "MenuOut");
     }
     
     public void StartScene(string nameScene)
     {
-        if (panelOptionActive && nameScene != "SelectGame")
-        {
-            panelOptionActive = false;
-            SoundUi.Instance.PlaySound(2);
-            Menu.GetComponent<Animation>().Play("MenuOut");
-            StartCoroutine(AnimationMenuStartScene(nameScene));
-        }
-        else if (panelOptionActive && nameScene == "SelectGame")
-        {
-            SceneManager.LoadScene(nameScene);
-        }
-        else if (!panelOptionActive)
-        {
-            SceneManager.LoadScene(nameScene);
-        }
+        SoundUi.Instance.StartScene(nameScene, Menu, "MenuOut");
+    }
+    
+    public void Restart(string nameScene)
+    {
+        SceneManager.LoadScene	(nameScene);
     }
 }

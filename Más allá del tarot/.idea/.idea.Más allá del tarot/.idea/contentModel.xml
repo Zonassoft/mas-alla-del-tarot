@@ -48,7 +48,6 @@
           </e>
           <e p="Music" t="Include">
             <e p="PlaySoundButton.cs" t="Include" />
-            <e p="PlaySoundGO.cs" t="Include" />
             <e p="SoundUi.cs" t="Include" />
           </e>
           <e p="ScreenSelect.cs" t="Include" />

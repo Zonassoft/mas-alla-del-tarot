@@ -8,13 +8,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using Image = UnityEngine.UI.Image;
 using Random = System.Random;
-using System.Runtime.InteropServices;
-
-[Serializable]
-public class TokenAPITarot
-{
-    public string key;
-}
+//using System.Runtime.InteropServices;
 
 [Serializable]
 public class DescriptionAPI
@@ -63,8 +57,8 @@ public class GameTarotController : MonoBehaviour
     
     public Canvas canvasGame;
     
-    [DllImport("__Internal")]
-    private static extern void FullScreenFunction();
+//    [DllImport("__Internal")]
+//    private static extern void FullScreenFunction();
     
     // Vista Lectura
     public GameObject[] boxDestiny;                // Las cuatro casillas donde van las cartas
@@ -105,8 +99,8 @@ public class GameTarotController : MonoBehaviour
         if (canvasGame.transform.GetComponent<RectTransform>().rect.width < childpanelBoxs.transform.GetComponent<RectTransform>().rect.width)
             canvasGame.transform.GetComponent<CanvasScaler>().matchWidthOrHeight = 0.9f;
         
-        buttonFullScreen.onClick.AddListener(TaskOnClickMax);
-        buttonMinimize.onClick.AddListener(TaskOnClickMin);
+//        buttonFullScreen.onClick.AddListener(TaskOnClickMax);
+//        buttonMinimize.onClick.AddListener(TaskOnClickMin);
     }
 
     private void Update()
@@ -142,30 +136,31 @@ public class GameTarotController : MonoBehaviour
         }
     }
     
-    void TaskOnClickMax()
-    {
-        StartCoroutine(WaitMax());
-    }
-
-    public IEnumerator WaitMax()
-    {
-        yield return new WaitForSeconds(0.5f);
-        
-        #if !UNITY_EDITOR && UNITY_WEBGL
-           FullScreenFunction();
-        #endif
-    }
-
-    void TaskOnClickMin()
-    {
-        StartCoroutine(WaitMin());
-    }
-    
-    public IEnumerator WaitMin()
-    {
-        yield return new WaitForSeconds(0.5f);
-        Screen.fullScreen = !Screen.fullScreen;
-    }
+//    void TaskOnClickMax()
+//    {
+//        StartCoroutine(WaitMax());
+//    }
+//
+//    public IEnumerator WaitMax()
+//    {
+//        yield return new WaitForSeconds(0.5f);
+//        SoundUi.Instance.FullScreenMethod();
+//        
+////        #if !UNITY_EDITOR && UNITY_WEBGL
+////           FullScreenFunction();
+////        #endif
+//    }
+//
+//    void TaskOnClickMin()
+//    {
+//        StartCoroutine(WaitMin());
+//    }
+//    
+//    public IEnumerator WaitMin()
+//    {
+//        yield return new WaitForSeconds(0.5f);
+//        Screen.fullScreen = !Screen.fullScreen;
+//    }
     
     public void ButtonShuffle()
     {
@@ -173,36 +168,13 @@ public class GameTarotController : MonoBehaviour
         panelSelectCards.SetActive(true);
         
         buttonAccept.gameObject.GetComponent<Image>().sprite = buttonDisable;
-        StartCoroutine(GetToken("Http://82.223.139.65/api/v1/auth/login/", "admin", "destino"));
+        StartCoroutine(GetDatesCards());
     }
     
-    public IEnumerator GetToken(string url, string username, string password)
+    public IEnumerator GetDatesCards()
     {
-        WWWForm form = new WWWForm();
-        form.AddField("username", username);
-        form.AddField("password", password);
-        
-        UnityWebRequest req = UnityWebRequest.Post(url, form);
-        yield return req.SendWebRequest();
-        
-        if (req.isNetworkError || req.isHttpError)
-        {
-            Debug.Log(req.error);
-        }
-        else
-        {
-            Debug.Log(req.downloadHandler.text);
-            string jsonString = req.downloadHandler.text;
-            TokenAPITarot dataKey = JsonUtility.FromJson<TokenAPITarot>(jsonString);
-            API_KEY = dataKey.key;
-            StartCoroutine(GetDatesCards("Http://82.223.139.65/api/v1/admin/card/", dataKey.key));
-        }
-    }
-    
-    public IEnumerator GetDatesCards(string url, string token)
-    {
-        UnityWebRequest req = UnityWebRequest.Get(url);
-	    req.SetRequestHeader("Authorization", "Token " + token);
+        UnityWebRequest req = UnityWebRequest.Get(SoundUi.Instance.urlCards);
+	    req.SetRequestHeader("Authorization", "Token " + SoundUi.Instance.TokenAPI);
         
         yield return req.SendWebRequest();
         
@@ -281,9 +253,27 @@ public class GameTarotController : MonoBehaviour
     public void ButtonAcceptCards()
     {
         if (countselectedCard == 4)
-            StartCoroutine(WaitButtonAccept());
+        {
+            panelSelectCards.SetActive(false);
+            panelHelp.SetActive(true);
+            buttonShuffle.gameObject.SetActive(false);
+        
+            for (int i = 0; i < 4; i++)
+            {
+                for (int j = 0; j < myObject.cardAPIList.Length; j++)
+                {
+                    if (myObject.cardAPIList[j].id == cardsInBoxList[i].GetComponent<CardNew>().idCardAPI)
+                    {
+                        StartCoroutine(DownloadAndSetImage(myObject.cardAPIList[j].image, i));
+                        break;
+                    }
+                }
+            }
+        }
         else
+        {
             StartCoroutine(Message());
+        }
     }
     
     public IEnumerator Message()
@@ -295,31 +285,10 @@ public class GameTarotController : MonoBehaviour
         msgButton.SetActive(false);
     }
     
-    public IEnumerator WaitButtonAccept()
-    {
-        yield return new WaitForSeconds(0.5f);
-        panelSelectCards.SetActive(false);
-        panelHelp.SetActive(true);
-        buttonShuffle.gameObject.SetActive(false);
-        
-        for (int i = 0; i < 4; i++)
-        {
-            for (int j = 0; j < myObject.cardAPIList.Length; j++)
-            {
-                if (myObject.cardAPIList[j].id == cardsInBoxList[i].GetComponent<CardNew>().idCardAPI)
-                {
-                    StartCoroutine(DownloadAndSetImage(myObject.cardAPIList[j].image, i));
-                    break;
-                }
-            }
-        }
-    }
-    
     IEnumerator DownloadAndSetImage(string url, int pos)
     {
-        Debug.Log("Url de la imagen" + url);
         UnityWebRequest www = UnityWebRequestTexture.GetTexture(url);
-        www.SetRequestHeader("Authorization", "Token " + API_KEY);
+        www.SetRequestHeader("Authorization", "Token " + SoundUi.Instance.TokenAPI);
         DownloadHandler handle = www.downloadHandler;
         
         yield return www.SendWebRequest();
@@ -410,12 +379,6 @@ public class GameTarotController : MonoBehaviour
     
     public void ButtonReading()
     {
-        StartCoroutine(WaitReadingPanel());
-    }
-
-    public IEnumerator WaitReadingPanel()
-    {
-        yield return new WaitForSeconds(0.5f);
         LoadingPanel.SetActive(true);
         buttonReading.gameObject.SetActive(false);
         restartButton.SetActive(true);
@@ -436,10 +399,10 @@ public class GameTarotController : MonoBehaviour
                 isInverses[i] = "False";
         }
         
-        StartCoroutine(GetDatesDescription("Http://82.223.139.65/api/v1/client/tarot/"));
+        StartCoroutine(GetDatesDescription());
     }
 
-    public IEnumerator GetDatesDescription(string url)
+    public IEnumerator GetDatesDescription()
     {
         for (int i = 0; i < 4; i++)
         {
@@ -448,8 +411,8 @@ public class GameTarotController : MonoBehaviour
             form.AddField("positions", positions[i]);
             form.AddField("isInverses", isInverses[i]);
         
-            UnityWebRequest req = UnityWebRequest.Post(url, form);
-            req.SetRequestHeader("Authorization", "Token " + API_KEY);
+            UnityWebRequest req = UnityWebRequest.Post(SoundUi.Instance.urlLesturaCards, form);
+            req.SetRequestHeader("Authorization", "Token " + SoundUi.Instance.TokenAPI);
             
             yield return req.SendWebRequest();
         
@@ -491,49 +454,22 @@ public class GameTarotController : MonoBehaviour
     
     public void ButtonOptions()
     {
-        panelOptionActive = true;
-        panelOptions.SetActive(true);
-        Menu.GetComponent<Animation>().Play("MenuIn");
-        SoundUi.Instance.PlaySound(2);
+        SoundUi.Instance.Options(panelOptions, Menu, "MenuIn");
     }
     
     public void ButtonQuitOptions()
     {
-        panelOptionActive = false;
-        SoundUi.Instance.PlaySound(2);
-        Menu.GetComponent<Animation>().Play("MenuOut");
-        StartCoroutine(AnimationMenu());
+        SoundUi.Instance.QuitOptions(panelOptions, Menu, "MenuOut");
     }
 
-    public IEnumerator AnimationMenu()
-    {
-        yield return new WaitForSeconds(1f);
-        panelOptions.SetActive(false);
-    }
-    
-    public IEnumerator AnimationMenuStartScene(string nameScene)
-    {
-        yield return new WaitForSeconds(1f);
-        SceneManager.LoadScene	(nameScene); 
-    }
-    
     public void StartScene(string nameScene)
     {
-        if (panelOptionActive && nameScene != "SelectGame")
-        {
-            panelOptionActive = false;
-            SoundUi.Instance.PlaySound(2);
-            Menu.GetComponent<Animation>().Play("MenuOut");
-            StartCoroutine(AnimationMenuStartScene(nameScene));
-        }
-        else if (panelOptionActive && nameScene == "SelectGame")
-        {
-            SceneManager.LoadScene(nameScene);
-        }
-        else if (!panelOptionActive)
-        {
-            SceneManager.LoadScene(nameScene);
-        }
+        SoundUi.Instance.StartScene(nameScene, Menu, "MenuOut");
+    }
+    
+    public void Restart(string nameScene)
+    {
+        SceneManager.LoadScene	(nameScene);
     }
 }
 

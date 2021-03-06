@@ -81,7 +81,6 @@
     <Compile Include="Assets\Scripts\Horoscopo\HoroscopoController.cs" />
     <Compile Include="Assets\Scripts\Horoscopo\HoroscopoControllerDesktop.cs" />
     <Compile Include="Assets\Scripts\Music\PlaySoundButton.cs" />
-    <Compile Include="Assets\Scripts\Music\PlaySoundGO.cs" />
     <Compile Include="Assets\Scripts\Music\SoundUi.cs" />
     <Compile Include="Assets\Scripts\ScreenSelect.cs" />
     <Compile Include="Assets\Scripts\ScreenStart.cs" />

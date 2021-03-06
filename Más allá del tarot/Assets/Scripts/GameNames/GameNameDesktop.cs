@@ -7,13 +7,7 @@ using UnityEngine.Networking;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using Random = System.Random;
-using System.Runtime.InteropServices;
-
-[Serializable]
-public class TokenAPINamePC
-{
-    public string key;
-}
+//using System.Runtime.InteropServices;
 
 [Serializable]
 public class NameInfoPC
@@ -50,8 +44,8 @@ public class GameNameDesktop : MonoBehaviour
     public Material[] materialLightParticles = new Material[26];
     private List<string> letterWrited = new List<string>();    // contiene las letras que han sido escritas
     
-    [DllImport("__Internal")]
-    private static extern void FullScreenFunction();
+//    [DllImport("__Internal")]
+//    private static extern void FullScreenFunction();
     
     public Button buttonFullScreen;
     public Button buttonMinimize;
@@ -63,8 +57,8 @@ public class GameNameDesktop : MonoBehaviour
     private void Start()
     {
         particleLetters.gameObject.SetActive(true);
-        buttonFullScreen.onClick.AddListener(TaskOnClickMax);
-        buttonMinimize.onClick.AddListener(TaskOnClickMin);
+//        buttonFullScreen.onClick.AddListener(TaskOnClickMax);
+//        buttonMinimize.onClick.AddListener(TaskOnClickMin);
     }
     
     private void Update()
@@ -103,30 +97,31 @@ public class GameNameDesktop : MonoBehaviour
         }
     }
     
-    void TaskOnClickMax()
-    {
-        StartCoroutine(WaitMax());
-    }
-
-    public IEnumerator WaitMax()
-    {
-        yield return new WaitForSeconds(0.5f);
-        
-        #if !UNITY_EDITOR && UNITY_WEBGL
-           FullScreenFunction();
-        #endif
-    }
-
-    void TaskOnClickMin()
-    {
-        StartCoroutine(WaitMin());
-    }
-    
-    public IEnumerator WaitMin()
-    {
-        yield return new WaitForSeconds(0.5f);
-        Screen.fullScreen = !Screen.fullScreen;
-    }
+//    void TaskOnClickMax()
+//    {
+//        StartCoroutine(WaitMax());
+//    }
+//
+//    public IEnumerator WaitMax()
+//    {
+//        yield return new WaitForSeconds(0.5f);
+//        SoundUi.Instance.FullScreenMethod();
+//        
+////        #if !UNITY_EDITOR && UNITY_WEBGL
+////           FullScreenFunction();
+////        #endif
+//    }
+//
+//    void TaskOnClickMin()
+//    {
+//        StartCoroutine(WaitMin());
+//    }
+//    
+//    public IEnumerator WaitMin()
+//    {
+//        yield return new WaitForSeconds(0.5f);
+//        Screen.fullScreen = !Screen.fullScreen;
+//    }
 
     public void ActivateLetter()
     {
@@ -387,41 +382,19 @@ public class GameNameDesktop : MonoBehaviour
         LoadingPanel.SetActive(true);
         
         if(sexFemale)
-            StartCoroutine(GetToken("Http://82.223.139.65/api/v1/auth/login/", "admin", "destino", "Femenino"));
+            StartCoroutine(GetNameDescription("Femenino"));
         else
-            StartCoroutine(GetToken("Http://82.223.139.65/api/v1/auth/login/", "admin", "destino", "Masculino"));
-    }
-
-    public IEnumerator GetToken(string url, string username, string password, string gender)
-    {
-        WWWForm form = new WWWForm();
-        form.AddField("username", username);
-        form.AddField("password", password);
-        
-        UnityWebRequest req = UnityWebRequest.Post(url, form);
-        yield return req.SendWebRequest();
-        
-        if (req.isNetworkError || req.isHttpError)
-        {
-            Debug.Log(req.error);
-        }
-        else
-        {
-            Debug.Log(req.downloadHandler.text);
-            string jsonString = req.downloadHandler.text;
-            TokenAPINamePC dataKey = JsonUtility.FromJson<TokenAPINamePC>(jsonString);
-            StartCoroutine(GetNameDescription("Http://82.223.139.65/api/v1/client/name/", gender, dataKey.key));
-        }
+            StartCoroutine(GetNameDescription("Masculino"));
     }
     
-    public IEnumerator GetNameDescription(string url, string gender, string token)
+    public IEnumerator GetNameDescription(string gender)
     {
         WWWForm form = new WWWForm();
         form.AddField("name", nameUser.text);
         form.AddField("gender", gender);
         
-        UnityWebRequest req = UnityWebRequest.Post(url, form);
-        req.SetRequestHeader("Authorization", "Token " + token);
+        UnityWebRequest req = UnityWebRequest.Post(SoundUi.Instance.urlName, form);
+        req.SetRequestHeader("Authorization", "Token " + SoundUi.Instance.TokenAPI);
         
         yield return req.SendWebRequest();
         
@@ -451,42 +424,21 @@ public class GameNameDesktop : MonoBehaviour
     
     public void ButtonOptions()
     {
-        panelOptionActive = true;
-        panelOptions.SetActive(true);
-        Menu.GetComponent<Animation>().Play("MenuInDesktop");
-        SoundUi.Instance.PlaySound(2);
+        SoundUi.Instance.Options(panelOptions, Menu, "MenuInDesktop");
     }
     
     public void ButtonQuitOptions()
     {
-        panelOptionActive = false;
-        SoundUi.Instance.PlaySound(2);
-        Menu.GetComponent<Animation>().Play("MenuOutDesktop");
-        panelOptions.SetActive(false);
+        SoundUi.Instance.QuitOptions(panelOptions, Menu, "MenuOutDesktop");
     }
 
-    public IEnumerator AnimationMenuStartScene(string nameScene)
-    {
-        yield return new WaitForSeconds(0.7f);
-        SceneManager.LoadScene	(nameScene); 
-    }
-    
     public void StartScene(string nameScene)
     {
-        if (panelOptionActive && nameScene != "SelectGame")
-        {
-            panelOptionActive = false;
-            SoundUi.Instance.PlaySound(2);
-            Menu.GetComponent<Animation>().Play("MenuOutDesktop");
-            StartCoroutine(AnimationMenuStartScene(nameScene));
-        }
-        else if (panelOptionActive && nameScene == "SelectGame")
-        {
-            SceneManager.LoadScene(nameScene);
-        }
-        else if (!panelOptionActive)
-        {
-            SceneManager.LoadScene(nameScene);
-        }
+        SoundUi.Instance.StartScene(nameScene, Menu, "MenuOutDesktop");
+    }
+    
+    public void Restart(string nameScene)
+    {
+        SceneManager.LoadScene	(nameScene);
     }
 }

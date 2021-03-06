@@ -1,19 +1,13 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Runtime.InteropServices;
+//using System.Runtime.InteropServices;
 using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using Random = UnityEngine.Random;
 using System.Text.RegularExpressions;
-
-[Serializable]
-public class TokenAPIDices
-{
-    public string key;
-}
 
 [Serializable]
 public class DicesInfo
@@ -35,8 +29,8 @@ public class GameDadosControllerMovil : MonoBehaviour
     public GameObject dado;
     public GameObject dado2;
     
-    [DllImport("__Internal")]
-    private static extern void FullScreenFunction();
+//    [DllImport("__Internal")]
+//    private static extern void FullScreenFunction();
     
     public Button buttonFullScreen;
     public Button buttonMinimize;
@@ -67,8 +61,8 @@ public class GameDadosControllerMovil : MonoBehaviour
     
     private void Start()
     {
-        buttonFullScreen.onClick.AddListener(TaskOnClickMax);
-        buttonMinimize.onClick.AddListener(TaskOnClickMin);
+//        buttonFullScreen.onClick.AddListener(TaskOnClickMax);
+//        buttonMinimize.onClick.AddListener(TaskOnClickMin);
         
         dados.SetActive(true);
         dadosDesktop.SetActive(false);
@@ -138,30 +132,31 @@ public class GameDadosControllerMovil : MonoBehaviour
             dado2.transform.rotation = Quaternion.Euler(n6.x, n6.y, n6.z);
     }
     
-    void TaskOnClickMax()
-    {
-        StartCoroutine(WaitMax());
-    }
-
-    public IEnumerator WaitMax()
-    {
-        yield return new WaitForSeconds(0.5f);
-        
-        #if !UNITY_EDITOR && UNITY_WEBGL
-           FullScreenFunction();
-        #endif
-    }
-
-    void TaskOnClickMin()
-    {
-        StartCoroutine(WaitMin());
-    }
-    
-    public IEnumerator WaitMin()
-    {
-        yield return new WaitForSeconds(0.5f);
-        Screen.fullScreen = !Screen.fullScreen;
-    }
+//    void TaskOnClickMax()
+//    {
+//        StartCoroutine(WaitMax());
+//    }
+//
+//    public IEnumerator WaitMax()
+//    {
+//        yield return new WaitForSeconds(0.5f);
+//        SoundUi.Instance.FullScreenMethod();
+//        
+////        #if !UNITY_EDITOR && UNITY_WEBGL
+////           FullScreenFunction();
+////        #endif
+//    }
+//
+//    void TaskOnClickMin()
+//    {
+//        StartCoroutine(WaitMin());
+//    }
+//    
+//    public IEnumerator WaitMin()
+//    {
+//        yield return new WaitForSeconds(0.5f);
+//        Screen.fullScreen = !Screen.fullScreen;
+//    }
     
     public void ClicDado()
     {
@@ -212,39 +207,17 @@ public class GameDadosControllerMovil : MonoBehaviour
     public void ButtonReading()
     {
         panelLoading.SetActive(true);
-        StartCoroutine(GetToken("Http://82.223.139.65/api/v1/auth/login/", "admin", "destino"));
+        StartCoroutine(GetDicesDescription());
     }
     
-    public IEnumerator GetToken(string url, string username, string password)
-    {
-        WWWForm form = new WWWForm();
-        form.AddField("username", username);
-        form.AddField("password", password);
-        
-        UnityWebRequest req = UnityWebRequest.Post(url, form);
-        yield return req.SendWebRequest();
-        
-        if (req.isNetworkError || req.isHttpError)
-        {
-            Debug.Log(req.error);
-        }
-        else
-        {
-            Debug.Log(req.downloadHandler.text);
-            string jsonString = req.downloadHandler.text;
-            TokenAPIDices dataKey = JsonUtility.FromJson<TokenAPIDices>(jsonString);
-            StartCoroutine(GetDicesDescription("Http://82.223.139.65/api/v1/client/dado/", dataKey.key));
-        }
-    }
-    
-    public IEnumerator GetDicesDescription(string url, string token)
+    public IEnumerator GetDicesDescription()
     {
         WWWForm form = new WWWForm();
         form.AddField("dado_azul", num);
         form.AddField("dado_rojo", numD2);
         
-        UnityWebRequest req = UnityWebRequest.Post(url, form);
-        req.SetRequestHeader("Authorization", "Token " + token);
+        UnityWebRequest req = UnityWebRequest.Post(SoundUi.Instance.urlDados, form);
+        req.SetRequestHeader("Authorization", "Token " + SoundUi.Instance.TokenAPI);
         
         yield return req.SendWebRequest();
         
@@ -298,52 +271,24 @@ public class GameDadosControllerMovil : MonoBehaviour
         descriptionDice1.GetComponent<Animation>().Play("PreviousDice1");
         descriptionDice2.GetComponent<Animation>().Play("PreviousDice");
     }
-    
 
     public void ButtonOptions()
     {
-        panelOptionActive = true;
-        panelOptions.SetActive(true);
-        Menu.GetComponent<Animation>().Play("MenuIn");
-        SoundUi.Instance.PlaySound(2);
+        SoundUi.Instance.Options(panelOptions, Menu, "MenuIn");
     }
     
     public void ButtonQuitOptions()
     {
-        panelOptionActive = false;
-        SoundUi.Instance.PlaySound(2);
-        Menu.GetComponent<Animation>().Play("MenuOut");
-        StartCoroutine(AnimationMenu());
+        SoundUi.Instance.QuitOptions(panelOptions, Menu, "MenuOut");
     }
 
-    public IEnumerator AnimationMenu()
-    {
-        yield return new WaitForSeconds(1f);
-        panelOptions.SetActive(false);
-    }
-    
-    public IEnumerator AnimationMenuStartScene(string nameScene)
-    {
-        yield return new WaitForSeconds(1f);
-        SceneManager.LoadScene	(nameScene); 
-    }
-    
     public void StartScene(string nameScene)
     {
-        if (panelOptionActive && nameScene != "SelectGame")
-        {
-            panelOptionActive = false;
-            SoundUi.Instance.PlaySound(2);
-            Menu.GetComponent<Animation>().Play("MenuOut");
-            StartCoroutine(AnimationMenuStartScene(nameScene));
-        }
-        else if (panelOptionActive && nameScene == "SelectGame")
-        {
-            SceneManager.LoadScene(nameScene);
-        }
-        else if (!panelOptionActive)
-        {
-            SceneManager.LoadScene(nameScene);
-        }
+        SoundUi.Instance.StartScene(nameScene, Menu, "MenuOut");
+    }
+    
+    public void Restart(string nameScene)
+    {
+        SceneManager.LoadScene	(nameScene);
     }
 }
