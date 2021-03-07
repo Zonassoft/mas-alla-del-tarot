@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
+using UnityEngine.Networking;
 using UnityEngine.SceneManagement;
 //using System.Runtime.InteropServices;
 
@@ -9,6 +11,9 @@ public class SelectGameController : MonoBehaviour
     
     public GameObject panelTurnGray;
     private bool panelTurnGrayActive;
+    
+    public GameObject panelLoadingMobile;
+    public GameObject panelLoadingDesktop;
     
 //    [DllImport("__Internal")]
 //    private static extern bool IsMobile();
@@ -43,6 +48,41 @@ public class SelectGameController : MonoBehaviour
 //        }
 //        return false;
 //    }
+    
+    private void Start()
+    {
+        if (SoundUi.Instance.isMobile())
+            panelLoadingMobile.SetActive(true);
+        else
+            panelLoadingDesktop.SetActive(true);
+        
+        StartCoroutine(GetToken());
+    }
+    
+    public IEnumerator GetToken()
+    {
+        WWWForm form = new WWWForm();
+        form.AddField("username", SoundUi.Instance.username);
+        form.AddField("password", SoundUi.Instance.password);
+        
+        UnityWebRequest req = UnityWebRequest.Post(SoundUi.Instance.urlToken, form);
+        yield return req.SendWebRequest();
+        
+        if (req.isNetworkError || req.isHttpError)
+        {
+            Debug.Log(req.error);
+        }
+        else
+        {
+            Debug.Log(req.downloadHandler.text);
+            string jsonString = req.downloadHandler.text;
+            Token dataKey = JsonUtility.FromJson<Token>(jsonString);
+            SoundUi.Instance.TokenAPI = dataKey.key;
+            
+            panelLoadingDesktop.SetActive(false);
+            panelLoadingMobile.SetActive(false);
+        }
+    }
     
     public void StartScene(string nameScene)
     {

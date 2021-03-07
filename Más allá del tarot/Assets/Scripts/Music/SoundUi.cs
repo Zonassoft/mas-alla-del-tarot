@@ -3,7 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Runtime.InteropServices;
-using UnityEngine.Networking;
 using UnityEngine.SceneManagement;
 
 [Serializable]
@@ -83,8 +82,6 @@ public class SoundUi : Singleton<SoundUi>
         urlToken = "Http://82.223.139.65/api/v1/auth/login/";
         username = "admin";
         password = "destino";
-        
-        StartCoroutine(GetToken());
     }
     
     public bool isMobile()
@@ -129,30 +126,6 @@ public class SoundUi : Singleton<SoundUi>
         #if !UNITY_EDITOR && UNITY_WEBGL
             FullScreenFunction();
         #endif
-    }
-    
-    public IEnumerator GetToken()
-    {
-        Debug.Log("Metodo GetToken");
-        
-        WWWForm form = new WWWForm();
-        form.AddField("username", username);
-        form.AddField("password", password);
-        
-        UnityWebRequest req = UnityWebRequest.Post(urlToken, form);
-        yield return req.SendWebRequest();
-        
-        if (req.isNetworkError || req.isHttpError)
-        {
-            Debug.Log(req.error);
-        }
-        else
-        {
-            Debug.Log(req.downloadHandler.text);
-            string jsonString = req.downloadHandler.text;
-            Token dataKey = JsonUtility.FromJson<Token>(jsonString);
-            TokenAPI = dataKey.key;
-        }
     }
     
     public void Options(GameObject panelOptions, GameObject Menu, string nameAnim)
