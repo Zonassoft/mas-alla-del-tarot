@@ -12,8 +12,8 @@ EditorBuildSettings:
     path: Assets/Scenes/SelectGame.unity
     guid: 3e810ae03ce97f147a79e5dd3ec6c855
   - enabled: 1
-    path: Assets/Scenes/Horoscopo.unity
-    guid: 7c9d2a6a25515c44ba5b1f110bdfcb33
+    path: Assets/Scenes/GameCards.unity
+    guid: bc628902150b81045a0dd09cf9f8a0e9
   - enabled: 1
     path: Assets/Scenes/GameNames.unity
     guid: 46cf1bfb8a5777147bab7f615f0a29fb
@@ -21,8 +21,8 @@ EditorBuildSettings:
     path: Assets/Scenes/GameDates.unity
     guid: 0382caec0485d2e4992c20188af2ed8b
   - enabled: 1
-    path: Assets/Scenes/GameCards.unity
-    guid: bc628902150b81045a0dd09cf9f8a0e9
+    path: Assets/Scenes/Horoscopo.unity
+    guid: 7c9d2a6a25515c44ba5b1f110bdfcb33
   - enabled: 1
     path: Assets/Scenes/Dados.unity
     guid: 5aabffcf81ac4d145920804b24e2179c
