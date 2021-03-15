@@ -1,0 +1,1193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="00ae57bb-6da0-46de-99a5-eb54def1128f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.MasAllaTarot/.idea/contentModel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.MasAllaTarot/.idea/indexLayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.MasAllaTarot/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.MasAllaTarot/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.MasAllaTarot/riderModule.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/.idea/.idea.Más allá del tarot/.idea/contentModel.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/.idea/.idea.Más allá del tarot/.idea/indexLayout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/.idea/.idea.Más allá del tarot/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/.idea/.idea.Más allá del tarot/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/.idea/.idea.Más allá del tarot/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/.idea/.idea.Más allá del tarot/riderModule.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/.idea/.idea.New Unity Project/.idea/contentModel.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/.idea/.idea.New Unity Project/.idea/indexLayout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/.idea/.idea.New Unity Project/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/.idea/.idea.New Unity Project/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/.idea/.idea.New Unity Project/riderModule.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/.idea/.idea.Proyecto Destino/.idea/contentModel.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/.idea/.idea.Proyecto Destino/.idea/indexLayout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/.idea/.idea.Proyecto Destino/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/.idea/.idea.Proyecto Destino/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/.idea/.idea.Proyecto Destino/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/.idea/.idea.Proyecto Destino/riderModule.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assembly-CSharp-Editor.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assembly-CSharp-firstpass.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assembly-CSharp.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Animated Loading Icons.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Animated Loading Icons/Animations.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Animated Loading Icons/Animations/Basic anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Animated Loading Icons/Animations/Basic anim/Basic 5.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Animated Loading Icons/Animations/Basic anim/Basic 5/basic_5_1.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Animated Loading Icons/Animations/Basic anim/Basic 5/basic_5_1.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Animated Loading Icons/Animations/Basic anim/Basic 5/basic_5_2.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Animated Loading Icons/Animations/Basic anim/Basic 5/basic_5_2.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Animated Loading Icons/Animations/Basic anim/Basic 5/basic_5_3.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Animated Loading Icons/Animations/Basic anim/Basic 5/basic_5_3.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Animated Loading Icons/Animations/Basic anim/Basic 5/basic_5_4.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Animated Loading Icons/Animations/Basic anim/Basic 5/basic_5_4.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Animations.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Animations/DadoAzul.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Animations/DadoAzul.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Animations/DadoFlotante.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Animations/DadoFlotante.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Animations/MenuIn.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Animations/MenuIn.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Animations/MenuInDesktop.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Animations/MenuInDesktop.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Animations/MenuOut.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Animations/MenuOut.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Animations/MenuOutDesktop.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Animations/MenuOutDesktop.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Animations/NextDice.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Animations/NextDice.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Animations/NextDice2.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Animations/NextDice2.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Animations/NextT.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Animations/NextT.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Animations/NextTarot2.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Animations/NextTarot2.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Animations/PreviousDice.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Animations/PreviousDice.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Animations/PreviousDice1.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Animations/PreviousDice1.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Animations/PreviousT.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Animations/PreviousT.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Animations/PreviousTarot2.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Animations/PreviousTarot2.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Animations/ScrollBall.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Animations/ScrollBall.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Animations/TurnCell.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Animations/TurnCell.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Animations/TurnDado.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Animations/TurnDado.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Animations/Voltear.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Animations/Voltear.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Animations/VoltearInvertir.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Animations/VoltearInvertir.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/03bea11f68f52322fb050241f798b738.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/03bea11f68f52322fb050241f798b738.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Asset 1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Asset 1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Background.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Background.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Background.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/BorderCard.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/BorderCard.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/BorderRevelacionTarot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/BorderRevelacionTarot.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Button.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Button.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/ButtonDisable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/ButtonDisable.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/ButtonHoroscopoDesktop.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/ButtonHoroscopoDesktop.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/ButtonHoroscopoMobile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/ButtonHoroscopoMobile.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/CardBack 1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/CardBack 1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/CardNumber 1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/CardNumber 1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/CardTarot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/CardTarot.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/FlechaOff.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/FlechaOff.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/FlechaOn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/FlechaOn.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/HelpTarotDesktop.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/HelpTarotDesktop.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/HelpTarotMobile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/HelpTarotMobile.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/IconLogo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/IconLogo.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Icons.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/ImgHoroscopo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/ImgHoroscopo.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Imgs Dados.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Imgs Dados/71BqJlraL4L._AC_SY679_.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Imgs Dados/71BqJlraL4L._AC_SY679_.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Imgs Dados/light-brown-texture.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Imgs Dados/light-brown-texture.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Imgs Dados/wrinkled-paper-1-1579769.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Imgs Dados/wrinkled-paper-1-1579769.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/InputNumerología2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/InputNumerología2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/LeftMenu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/LeftMenu.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/LetrasNombre.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/LetrasNombre/A.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/LetrasNombre/A.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/LetrasNombre/B.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/LetrasNombre/B.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/LetrasNombre/C.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/LetrasNombre/C.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/LetrasNombre/D.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/LetrasNombre/D.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/LetrasNombre/E.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/LetrasNombre/E.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/LetrasNombre/F.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/LetrasNombre/F.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/LetrasNombre/G.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/LetrasNombre/G.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/LetrasNombre/H.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/LetrasNombre/H.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/LetrasNombre/I.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/LetrasNombre/I.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/LetrasNombre/J.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/LetrasNombre/J.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/LetrasNombre/K.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/LetrasNombre/K.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/LetrasNombre/L.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/LetrasNombre/L.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/LetrasNombre/M.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/LetrasNombre/M.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/LetrasNombre/N.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/LetrasNombre/N.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/LetrasNombre/O.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/LetrasNombre/O.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/LetrasNombre/P.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/LetrasNombre/P.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/LetrasNombre/Q.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/LetrasNombre/Q.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/LetrasNombre/R.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/LetrasNombre/R.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/LetrasNombre/S.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/LetrasNombre/S.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/LetrasNombre/T.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/LetrasNombre/T.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/LetrasNombre/U.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/LetrasNombre/U.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/LetrasNombre/V.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/LetrasNombre/V.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/LetrasNombre/W.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/LetrasNombre/W.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/LetrasNombre/X.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/LetrasNombre/X.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/LetrasNombre/Y.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/LetrasNombre/Y.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/LetrasNombre/Z.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/LetrasNombre/Z.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Light.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/AzulNuevo.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/AzulNuevo.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/Background.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/Background.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/BlancoDadoNuevo 1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/BlancoDadoNuevo 1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/EfectoHumo.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/EfectoHumo.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/LilaDadoNuevo.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/LilaDadoNuevo.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasAnimación.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasAnimación/A.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasAnimación/A.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasAnimación/B.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasAnimación/B.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasAnimación/C.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasAnimación/C.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasAnimación/D.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasAnimación/D.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasAnimación/E.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasAnimación/E.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasAnimación/F.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasAnimación/F.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasAnimación/G.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasAnimación/G.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasAnimación/H.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasAnimación/H.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasAnimación/I.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasAnimación/I.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasAnimación/J.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasAnimación/J.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasAnimación/K.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasAnimación/K.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasAnimación/L.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasAnimación/L.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasAnimación/M.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasAnimación/M.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasAnimación/N.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasAnimación/N.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasAnimación/O.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasAnimación/O.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasAnimación/P.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasAnimación/P.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasAnimación/Q.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasAnimación/Q.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasAnimación/R.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasAnimación/R.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasAnimación/S.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasAnimación/S.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasAnimación/T.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasAnimación/T.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasAnimación/U.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasAnimación/U.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasAnimación/V.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasAnimación/V.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasAnimación/W.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasAnimación/W.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasAnimación/X.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasAnimación/X.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasAnimación/Y.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasAnimación/Y.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasAnimación/Z.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasAnimación/Z.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasBrillantes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasBrillantes/A.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasBrillantes/A.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasBrillantes/B.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasBrillantes/B.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasBrillantes/C.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasBrillantes/C.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasBrillantes/D.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasBrillantes/D.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasBrillantes/E.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasBrillantes/E.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasBrillantes/F.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasBrillantes/F.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasBrillantes/G.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasBrillantes/G.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasBrillantes/H.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasBrillantes/H.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasBrillantes/I.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasBrillantes/I.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasBrillantes/J.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasBrillantes/J.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasBrillantes/K.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasBrillantes/K.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasBrillantes/L.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasBrillantes/L.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasBrillantes/M.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasBrillantes/M.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasBrillantes/N.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasBrillantes/N.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasBrillantes/O.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasBrillantes/O.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasBrillantes/P.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasBrillantes/P.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasBrillantes/Q.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasBrillantes/Q.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasBrillantes/R.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasBrillantes/R.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasBrillantes/S.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasBrillantes/S.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasBrillantes/T.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasBrillantes/T.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasBrillantes/U.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasBrillantes/U.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasBrillantes/V.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasBrillantes/V.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasBrillantes/W.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasBrillantes/W.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasBrillantes/X.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasBrillantes/X.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasBrillantes/Y.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasBrillantes/Y.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasBrillantes/Z.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewMaterialLetrasBrillantes/Z.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewNumeros.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewNumeros/0.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewNumeros/0.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewNumeros/1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewNumeros/1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewNumeros/2.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewNumeros/2.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewNumeros/3.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewNumeros/3.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewNumeros/4.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewNumeros/4.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewNumeros/5.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewNumeros/5.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewNumeros/6.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewNumeros/6.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewNumeros/7.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewNumeros/7.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewNumeros/8.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewNumeros/8.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewNumeros/9.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewNumeros/9.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewNumerosIluminados.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewNumerosIluminados/L0.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewNumerosIluminados/L0.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewNumerosIluminados/L1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewNumerosIluminados/L1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewNumerosIluminados/L2.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewNumerosIluminados/L2.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewNumerosIluminados/L3.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewNumerosIluminados/L3.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewNumerosIluminados/L4.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewNumerosIluminados/L4.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewNumerosIluminados/L5.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewNumerosIluminados/L5.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewNumerosIluminados/L6.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewNumerosIluminados/L6.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewNumerosIluminados/L7.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewNumerosIluminados/L7.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewNumerosIluminados/L8.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewNumerosIluminados/L8.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewNumerosIluminados/L9.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Material/NewNumerosIluminados/L9.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Materials/bitmap.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Materials/bitmap.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Men.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Men.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/MenuBar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/MenuBar.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Mouse.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Mouse.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLetrasIluminadas.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLetrasIluminadas/0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLetrasIluminadas/0.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLetrasIluminadas/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLetrasIluminadas/1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLetrasIluminadas/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLetrasIluminadas/2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLetrasIluminadas/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLetrasIluminadas/3.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLetrasIluminadas/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLetrasIluminadas/4.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLetrasIluminadas/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLetrasIluminadas/5.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLetrasIluminadas/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLetrasIluminadas/6.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLetrasIluminadas/7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLetrasIluminadas/7.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLetrasIluminadas/8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLetrasIluminadas/8.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLetrasIluminadas/9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLetrasIluminadas/9.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLetrasIluminadas/A.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLetrasIluminadas/A.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLetrasIluminadas/B.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLetrasIluminadas/B.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLetrasIluminadas/C.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLetrasIluminadas/C.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLetrasIluminadas/D.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLetrasIluminadas/D.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLetrasIluminadas/E.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLetrasIluminadas/E.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLetrasIluminadas/F.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLetrasIluminadas/F.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLetrasIluminadas/G.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLetrasIluminadas/G.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLetrasIluminadas/H.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLetrasIluminadas/H.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLetrasIluminadas/I.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLetrasIluminadas/I.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLetrasIluminadas/J.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLetrasIluminadas/J.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLetrasIluminadas/K.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLetrasIluminadas/K.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLetrasIluminadas/L.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLetrasIluminadas/L.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLetrasIluminadas/M.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLetrasIluminadas/M.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLetrasIluminadas/N.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLetrasIluminadas/N.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLetrasIluminadas/O.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLetrasIluminadas/O.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLetrasIluminadas/P.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLetrasIluminadas/P.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLetrasIluminadas/Q.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLetrasIluminadas/Q.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLetrasIluminadas/R.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLetrasIluminadas/R.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLetrasIluminadas/S.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLetrasIluminadas/S.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLetrasIluminadas/T.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLetrasIluminadas/T.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLetrasIluminadas/U.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLetrasIluminadas/U.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLetrasIluminadas/V.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLetrasIluminadas/V.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLetrasIluminadas/W.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLetrasIluminadas/W.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLetrasIluminadas/X.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLetrasIluminadas/X.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLetrasIluminadas/Y.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLetrasIluminadas/Y.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLetrasIluminadas/Z.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLetrasIluminadas/Z.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLettersAnimation.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLettersAnimation/0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLettersAnimation/0.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLettersAnimation/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLettersAnimation/1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLettersAnimation/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLettersAnimation/2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLettersAnimation/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLettersAnimation/3.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLettersAnimation/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLettersAnimation/4.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLettersAnimation/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLettersAnimation/5.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLettersAnimation/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLettersAnimation/6.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLettersAnimation/7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLettersAnimation/7.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLettersAnimation/8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLettersAnimation/8.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLettersAnimation/9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLettersAnimation/9.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLettersAnimation/A.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLettersAnimation/A.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLettersAnimation/B.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLettersAnimation/B.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLettersAnimation/C.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLettersAnimation/C.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLettersAnimation/D.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLettersAnimation/D.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLettersAnimation/E.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLettersAnimation/E.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLettersAnimation/F.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLettersAnimation/F.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLettersAnimation/G.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLettersAnimation/G.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLettersAnimation/H.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLettersAnimation/H.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLettersAnimation/I.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLettersAnimation/I.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLettersAnimation/J.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLettersAnimation/J.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLettersAnimation/K.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLettersAnimation/K.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLettersAnimation/L.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLettersAnimation/L.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLettersAnimation/M.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLettersAnimation/M.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLettersAnimation/N.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLettersAnimation/N.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLettersAnimation/O.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLettersAnimation/O.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLettersAnimation/P.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLettersAnimation/P.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLettersAnimation/Q.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLettersAnimation/Q.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLettersAnimation/R.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLettersAnimation/R.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLettersAnimation/S.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLettersAnimation/S.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLettersAnimation/T.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLettersAnimation/T.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLettersAnimation/U.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLettersAnimation/U.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLettersAnimation/V.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLettersAnimation/V.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLettersAnimation/W.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLettersAnimation/W.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLettersAnimation/X.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLettersAnimation/X.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLettersAnimation/Y.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLettersAnimation/Y.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLettersAnimation/Z.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/NewLettersAnimation/Z.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/RectangleYellow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/RectangleYellow.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/ScrollMouse.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/ScrollMouse.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/SelectedIcon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/SelectedIcon.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/ShapeBackName1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/ShapeBackName1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/ShapeBackSelectGame.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/ShapeBackSelectGame.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/ShapeBackTarot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/ShapeBackTarot.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/ShapeLoading.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/ShapeLoading.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Sodiaco.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Sodiaco/Acuario.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Sodiaco/Acuario.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Sodiaco/Aries.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Sodiaco/Aries.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Sodiaco/Capricornio.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Sodiaco/Capricornio.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Sodiaco/Cáncer.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Sodiaco/Cáncer.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Sodiaco/Escorpio.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Sodiaco/Escorpio.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Sodiaco/Géminis.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Sodiaco/Géminis.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Sodiaco/Leo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Sodiaco/Leo.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Sodiaco/Libra.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Sodiaco/Libra.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Sodiaco/Piscis.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Sodiaco/Piscis.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Sodiaco/Sagitario.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Sodiaco/Sagitario.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Sodiaco/Tauro.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Sodiaco/Tauro.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Sodiaco/Virgo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Sodiaco/Virgo.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Woman.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/Woman.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/bitmap.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Design/bitmap.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Editor/PostBuildActions.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Editor/PostBuildActions.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Fonts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Fonts/Amatic-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Fonts/Amatic-Bold.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Fonts/BELLB.TTF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Fonts/BELLB.TTF.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Fonts/BELLI.TTF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Fonts/BELLI.TTF.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Fonts/BerkshireSwash-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Fonts/BerkshireSwash-Regular.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Fonts/BubblerOne-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Fonts/BubblerOne-Regular.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Fonts/MesquiteStd.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Fonts/MesquiteStd.otf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Plugins.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Plugins/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Plugins/Editor/JetBrains.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Plugins/webgl.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Plugins/webgl/FullScreenPlugin.jslib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Plugins/webgl/FullScreenPlugin.jslib.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Plugins/webgl/MyPlugin.jslib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Plugins/webgl/MyPlugin.jslib.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Prefabs/AnimLoading.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Prefabs/AnimLoading.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Prefabs/Azul.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Prefabs/Azul.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Prefabs/NewLetters.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Prefabs/NewLetters/A.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Prefabs/NewLetters/A.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Prefabs/NewLetters/B.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Prefabs/NewLetters/B.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Prefabs/NewLetters/C.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Prefabs/NewLetters/C.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Prefabs/NewLetters/D.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Prefabs/NewLetters/D.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Prefabs/NewLetters/E.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Prefabs/NewLetters/E.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Prefabs/NewLetters/F.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Prefabs/NewLetters/F.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Prefabs/NewLetters/G.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Prefabs/NewLetters/G.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Prefabs/NewLetters/H.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Prefabs/NewLetters/H.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Prefabs/NewLetters/I.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Prefabs/NewLetters/I.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Prefabs/NewLetters/J.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Prefabs/NewLetters/J.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Prefabs/NewLetters/K.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Prefabs/NewLetters/K.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Prefabs/NewLetters/L.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Prefabs/NewLetters/L.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Prefabs/NewLetters/M.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Prefabs/NewLetters/M.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Prefabs/NewLetters/N.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Prefabs/NewLetters/N.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Prefabs/NewLetters/O.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Prefabs/NewLetters/O.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Prefabs/NewLetters/P.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Prefabs/NewLetters/P.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Prefabs/NewLetters/Q.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Prefabs/NewLetters/Q.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Prefabs/NewLetters/R.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Prefabs/NewLetters/R.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Prefabs/NewLetters/S.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Prefabs/NewLetters/S.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Prefabs/NewLetters/T.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Prefabs/NewLetters/T.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Prefabs/NewLetters/U.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Prefabs/NewLetters/U.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Prefabs/NewLetters/V.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Prefabs/NewLetters/V.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Prefabs/NewLetters/W.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Prefabs/NewLetters/W.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Prefabs/NewLetters/X.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Prefabs/NewLetters/X.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Prefabs/NewLetters/Y.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Prefabs/NewLetters/Y.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Prefabs/NewLetters/Z.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Prefabs/NewLetters/Z.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Prefabs/PrefabCardNew.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Prefabs/PrefabCardNew.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Prefabs/PrefabCardPC.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Prefabs/PrefabCardPC.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Prefabs/thinSpine.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Prefabs/thinSpine.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scenes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scenes/Dados.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scenes/Dados.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scenes/GameCards.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scenes/GameCards.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scenes/GameDates.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scenes/GameDates.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scenes/GameNames.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scenes/GameNames.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scenes/Horoscopo.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scenes/Horoscopo.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scenes/SelectGame.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scenes/SelectGame.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scenes/Start.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scenes/Start.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scripts/Dados.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scripts/Dados/AddForce.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scripts/Dados/AddForce.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scripts/Dados/DadoDesktop.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scripts/Dados/DadoDesktop.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scripts/Dados/DadoMobile.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scripts/Dados/DadoMobile.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scripts/Dados/GameDadosController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scripts/Dados/GameDadosController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scripts/Dados/GameDadosControllerMovil.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scripts/Dados/GameDadosControllerMovil.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scripts/GameCards.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scripts/GameCards/Desktop.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scripts/GameCards/Desktop/CardDraggerPC.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scripts/GameCards/Desktop/CardDraggerPC.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scripts/GameCards/Desktop/CardGetterPC.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scripts/GameCards/Desktop/CardGetterPC.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scripts/GameCards/Desktop/CardPC.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scripts/GameCards/Desktop/CardPC.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scripts/GameCards/Desktop/SelectCardPC.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scripts/GameCards/Desktop/SelectCardPC.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scripts/GameCards/Desktop/TarotControllerDesktop.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scripts/GameCards/Desktop/TarotControllerDesktop.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scripts/GameCards/Mobile.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scripts/GameCards/Mobile/CardDragger.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scripts/GameCards/Mobile/CardDragger.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scripts/GameCards/Mobile/CardGetter.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scripts/GameCards/Mobile/CardGetter.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scripts/GameCards/Mobile/CardNew.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scripts/GameCards/Mobile/CardNew.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scripts/GameCards/Mobile/GameTarotController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scripts/GameCards/Mobile/GameTarotController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scripts/GameCards/Mobile/SelectCard.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scripts/GameCards/Mobile/SelectCard.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scripts/GameDates.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scripts/GameDates/GameDateDesktop.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scripts/GameDates/GameDateDesktop.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scripts/GameDates/GameDatesController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scripts/GameDates/GameDatesController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scripts/GameNames.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scripts/GameNames/GameNameDesktop.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scripts/GameNames/GameNameDesktop.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scripts/GameNames/GameNamesController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scripts/GameNames/GameNamesController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scripts/Horoscopo.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scripts/Horoscopo/HoroscopoController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scripts/Horoscopo/HoroscopoController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scripts/Horoscopo/HoroscopoControllerDesktop.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scripts/Horoscopo/HoroscopoControllerDesktop.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scripts/Music.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scripts/Music/PlaySoundButton.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scripts/Music/PlaySoundButton.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scripts/Music/SoundUi.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scripts/Music/SoundUi.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scripts/ScreenSelect.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scripts/ScreenSelect.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scripts/ScreenStart.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scripts/ScreenStart.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scripts/SelectGame.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scripts/SelectGame/SelectGameController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scripts/SelectGame/SelectGameController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scripts/Singleton.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Scripts/Singleton.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Sounds.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Sounds/clic.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Sounds/clic.mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Sounds/coger.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Sounds/coger.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Sounds/magicDice.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Sounds/magicDice.mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Sounds/melodyloops-spring-flower.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Sounds/melodyloops-spring-flower.mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Sounds/menu.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Sounds/menu.mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Sounds/ponerCarta.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Sounds/ponerCarta.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Sounds/repartir cartas.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Sounds/repartir cartas.mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Sounds/revelación.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Sounds/revelación.mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Sounds/tilin.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Sounds/tilin.mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Sounds/voltear carta.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/Sounds/voltear carta.mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/TextMesh Pro.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/TextMesh Pro/Documentation.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/TextMesh Pro/Documentation/TextMesh Pro User Guide 2016.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/TextMesh Pro/Documentation/TextMesh Pro User Guide 2016.pdf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/TextMesh Pro/Fonts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/TextMesh Pro/Fonts/LiberationSans.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/TextMesh Pro/Fonts/LiberationSans.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/TextMesh Pro/Resources.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/TextMesh Pro/Resources/Fonts &amp; Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Drop Shadow.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Drop Shadow.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Outline.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Outline.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/TextMesh Pro/Resources/Shaders.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/TextMesh Pro/Resources/Shaders/TMP_Bitmap-Custom-Atlas.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/TextMesh Pro/Resources/Shaders/TMP_Bitmap-Custom-Atlas.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/TextMesh Pro/Resources/Shaders/TMP_Bitmap-Mobile.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/TextMesh Pro/Resources/Shaders/TMP_Bitmap-Mobile.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/TextMesh Pro/Resources/Shaders/TMP_Bitmap.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/TextMesh Pro/Resources/Shaders/TMP_Bitmap.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/TextMesh Pro/Resources/Shaders/TMP_SDF Overlay.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/TextMesh Pro/Resources/Shaders/TMP_SDF Overlay.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/TextMesh Pro/Resources/Shaders/TMP_SDF-Mobile Masking.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/TextMesh Pro/Resources/Shaders/TMP_SDF-Mobile Masking.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/TextMesh Pro/Resources/Shaders/TMP_SDF-Mobile Overlay.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/TextMesh Pro/Resources/Shaders/TMP_SDF-Mobile Overlay.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/TextMesh Pro/Resources/Shaders/TMP_SDF-Mobile.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/TextMesh Pro/Resources/Shaders/TMP_SDF-Mobile.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/TextMesh Pro/Resources/Shaders/TMP_SDF-Surface-Mobile.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/TextMesh Pro/Resources/Shaders/TMP_SDF-Surface-Mobile.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/TextMesh Pro/Resources/Shaders/TMP_SDF-Surface.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/TextMesh Pro/Resources/Shaders/TMP_SDF-Surface.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/TextMesh Pro/Resources/Shaders/TMP_SDF.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/TextMesh Pro/Resources/Shaders/TMP_SDF.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/TextMesh Pro/Resources/Shaders/TMP_Sprite.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/TextMesh Pro/Resources/Shaders/TMP_Sprite.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/TextMesh Pro/Resources/Shaders/TMPro.cginc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/TextMesh Pro/Resources/Shaders/TMPro.cginc.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/TextMesh Pro/Resources/Shaders/TMPro_Properties.cginc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/TextMesh Pro/Resources/Shaders/TMPro_Properties.cginc.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/TextMesh Pro/Resources/Shaders/TMPro_Surface.cginc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/TextMesh Pro/Resources/Shaders/TMPro_Surface.cginc.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/TextMesh Pro/Resources/Sprite Assets.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/TextMesh Pro/Resources/Style Sheets.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/TextMesh Pro/Resources/TMP Settings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/TextMesh Pro/Resources/TMP Settings.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/TextMesh Pro/Sprites.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/TextMesh Pro/Sprites/EmojiOne.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/TextMesh Pro/Sprites/EmojiOne.json.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/TextMesh Pro/Sprites/EmojiOne.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/TextMesh Pro/Sprites/EmojiOne.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/WebGLSupport.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/WebGLSupport/WebGLInput.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/WebGLSupport/WebGLInput/Detail.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/WebGLSupport/WebGLInput/Detail/RebuildChecker.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/WebGLSupport/WebGLInput/Detail/RebuildChecker.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/WebGLSupport/WebGLInput/WebGLInput.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/WebGLSupport/WebGLInput/WebGLInput.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/WebGLSupport/WebGLInput/WebGLInput.jslib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/WebGLSupport/WebGLInput/WebGLInput.jslib.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/WebGLSupport/WebGLInput/Wrapper.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/WebGLSupport/WebGLInput/Wrapper/IInputField.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/WebGLSupport/WebGLInput/Wrapper/IInputField.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/WebGLSupport/WebGLInput/Wrapper/WrappedInputField.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/WebGLSupport/WebGLInput/Wrapper/WrappedInputField.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/WebGLSupport/WebGLInput/Wrapper/WrappedTMPInputField.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/WebGLSupport/WebGLInput/Wrapper/WrappedTMPInputField.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/WebGLSupport/WebGLWindow.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/WebGLSupport/WebGLWindow/WebGLWindow.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/WebGLSupport/WebGLWindow/WebGLWindow.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/WebGLSupport/WebGLWindow/WebGLWindow.jslib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/WebGLSupport/WebGLWindow/WebGLWindow.jslib.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/WebGLTemplates.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/WebGLTemplates/BetterTemplate.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/WebGLTemplates/BetterTemplate/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/WebGLTemplates/BetterTemplate/index.html.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/WebGLTemplates/BetterTemplate/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Assets/WebGLTemplates/BetterTemplate/logo.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Logs/Packages-Update.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Más allá del tarot.sln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/New Unity Project.sln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Packages/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/ProjectSettings/AudioManager.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/ProjectSettings/ClusterInputManager.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/ProjectSettings/DynamicsManager.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/ProjectSettings/EditorSettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/ProjectSettings/GraphicsSettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/ProjectSettings/InputManager.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/ProjectSettings/NavMeshAreas.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/ProjectSettings/NetworkManager.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/ProjectSettings/NetworkManager.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/ProjectSettings/Physics2DSettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/ProjectSettings/PresetManager.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/ProjectSettings/ProjectSettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/ProjectSettings/ProjectVersion.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/ProjectSettings/QualitySettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/ProjectSettings/TagManager.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/ProjectSettings/TimeManager.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/ProjectSettings/UnityConnectSettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/ProjectSettings/VFXManager.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/ProjectSettings/XRSettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/Proyecto Destino.sln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Más allá del tarot/debug.log" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="1059629825">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.41" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="cs" value="68" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="C#" value="68" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameCards/Desktop/TarotControllerDesktop.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="316" selection-start-line="316" selection-end-line="316" />
+              <folding>
+                <marker date="1615846256373" expanded="false" signature="6:283" ph="..." />
+                <marker date="1615846256373" expanded="true" signature="369:514" ph="{...}" />
+                <marker date="1615846256373" expanded="true" signature="553:627" ph="{...}" />
+                <marker date="1615846256373" expanded="true" signature="668:708" ph="{...}" />
+                <marker date="1615846256373" expanded="true" signature="761:17678" ph="{...}" />
+                <marker date="1615846256373" expanded="true" signature="2647:2733" ph="/* [DllImport(&quot;__Internal&quot;)] ... */" />
+                <marker date="1615846256373" expanded="true" signature="2763:3081" ph="{...}" />
+                <marker date="1615846256373" expanded="true" signature="2950:3075" ph="/* buttonFullScreen.onClick.AddListener(TaskOnClickMax); ... */" />
+                <marker date="1615846256373" expanded="true" signature="3087:3671" ph="/* void TaskOnClickMax() ... */" />
+                <marker date="1615846256373" expanded="true" signature="3702:4469" ph="{...}" />
+                <marker date="1615846256373" expanded="true" signature="3730:4144" ph="{...}" />
+                <marker date="1615846256373" expanded="true" signature="3808:3985" ph="{...}" />
+                <marker date="1615846256373" expanded="true" signature="4014:4134" ph="{...}" />
+                <marker date="1615846256373" expanded="true" signature="4184:4317" ph="{...}" />
+                <marker date="1615846256373" expanded="true" signature="4330:4463" ph="{...}" />
+                <marker date="1615846256373" expanded="true" signature="4506:5007" ph="{...}" />
+                <marker date="1615846256373" expanded="true" signature="5051:6477" ph="{...}" />
+                <marker date="1615846256373" expanded="true" signature="5332:5386" ph="{...}" />
+                <marker date="1615846256373" expanded="true" signature="5399:6471" ph="{...}" />
+                <marker date="1615846256373" expanded="true" signature="5682:5820" ph="{...}" />
+                <marker date="1615846256373" expanded="true" signature="5890:6434" ph="{...}" />
+                <marker date="1615846256373" expanded="true" signature="6504:7409" ph="{...}" />
+                <marker date="1615846256373" expanded="true" signature="6597:6679" ph="{...}" />
+                <marker date="1615846256373" expanded="true" signature="6768:7311" ph="{...}" />
+                <marker date="1615846256373" expanded="true" signature="6812:7301" ph="{...}" />
+                <marker date="1615846256373" expanded="true" signature="7456:7605" ph="{...}" />
+                <marker date="1615846256373" expanded="true" signature="7646:8385" ph="{...}" />
+                <marker date="1615846256373" expanded="true" signature="7688:8307" ph="{...}" />
+                <marker date="1615846256373" expanded="true" signature="7887:8297" ph="{...}" />
+                <marker date="1615846256373" expanded="true" signature="7971:8283" ph="{...}" />
+                <marker date="1615846256373" expanded="true" signature="8095:8265" ph="{...}" />
+                <marker date="1615846256373" expanded="true" signature="8320:8379" ph="{...}" />
+                <marker date="1615846256373" expanded="true" signature="8423:8649" ph="{...}" />
+                <marker date="1615846256373" expanded="true" signature="8711:9633" ph="{...}" />
+                <marker date="1615846256373" expanded="true" signature="9056:9122" ph="{...}" />
+                <marker date="1615846256373" expanded="true" signature="9135:9627" ph="{...}" />
+                <marker date="1615846256373" expanded="true" signature="9459:9617" ph="{...}" />
+                <marker date="1615846256373" expanded="true" signature="9672:9721" ph="{...}" />
+                <marker date="1615846256373" expanded="true" signature="9761:10467" ph="{...}" />
+                <marker date="1615846256373" expanded="true" signature="10011:10357" ph="{...}" />
+                <marker date="1615846256373" expanded="true" signature="10507:11608" ph="{...}" />
+                <marker date="1615846256373" expanded="true" signature="10549:11602" ph="{...}" />
+                <marker date="1615846256373" expanded="true" signature="10830:11189" ph="{...}" />
+                <marker date="1615846256373" expanded="true" signature="11206:11383" ph="{...}" />
+                <marker date="1615846256373" expanded="true" signature="11673:12060" ph="{...}" />
+                <marker date="1615846256373" expanded="true" signature="11798:12054" ph="{...}" />
+                <marker date="1615846256373" expanded="true" signature="11893:12044" ph="{...}" />
+                <marker date="1615846256373" expanded="true" signature="12097:12942" ph="{...}" />
+                <marker date="1615846256373" expanded="true" signature="12360:12880" ph="{...}" />
+                <marker date="1615846256373" expanded="true" signature="12991:15094" ph="{...}" />
+                <marker date="1615846256373" expanded="true" signature="13033:15088" ph="{...}" />
+                <marker date="1615846256373" expanded="true" signature="13557:13623" ph="{...}" />
+                <marker date="1615846256373" expanded="true" signature="13640:15078" ph="{...}" />
+                <marker date="1615846256373" expanded="true" signature="13832:14545" ph="{...}" />
+                <marker date="1615846256373" expanded="true" signature="14566:14831" ph="{...}" />
+                <marker date="1615846256373" expanded="true" signature="14876:15064" ph="{...}" />
+                <marker date="1615846256373" expanded="true" signature="15134:16126" ph="{...}" />
+                <marker date="1615846256373" expanded="true" signature="15187:15400" ph="{...}" />
+                <marker date="1615846256373" expanded="true" signature="15443:15796" ph="{...}" />
+                <marker date="1615846256373" expanded="true" signature="15842:16120" ph="{...}" />
+                <marker date="1615846256373" expanded="true" signature="16174:17194" ph="{...}" />
+                <marker date="1615846256373" expanded="true" signature="16227:16587" ph="{...}" />
+                <marker date="1615846256373" expanded="true" signature="16633:16941" ph="{...}" />
+                <marker date="1615846256373" expanded="true" signature="16987:17188" ph="{...}" />
+                <marker date="1615846256373" expanded="true" signature="17231:17314" ph="{...}" />
+                <marker date="1615846256373" expanded="true" signature="17355:17443" ph="{...}" />
+                <marker date="1615846256373" expanded="true" signature="17489:17573" ph="{...}" />
+                <marker date="1615846256373" expanded="true" signature="17620:17676" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameCards/Desktop/TarotControllerDesktop.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameCards/Desktop/TarotControllerDesktop.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="194" />
+    <option name="y" value="190" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="UnityExplorer" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="SolutionExplorer">
+        <option name="show-all-files" value="false" />
+      </pane>
+      <pane id="FileSystemExplorer" />
+      <pane id="UnityExplorer">
+        <option name="show-hidden-items" value="false" />
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Attach to Unity Editor.Attach to Unity Editor" />
+      <item itemvalue="Attach to Unity Editor.Attach to Unity Editor &amp; Play" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="00ae57bb-6da0-46de-99a5-eb54def1128f" name="Default Changelist" comment="" />
+      <created>1615845545249</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1615845545249</updated>
+      <workItem from="1615845566639" duration="1267000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1267000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1369936" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="NuGet" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Unity" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Unit Tests" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Build" visible="true" weight="0.329718" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Errors In Solution" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Unit Tests Coverage" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameCards/Desktop/TarotControllerDesktop.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="316" selection-start-line="316" selection-end-line="316" />
+          <folding>
+            <marker date="1615846256373" expanded="false" signature="6:283" ph="..." />
+            <marker date="1615846256373" expanded="true" signature="369:514" ph="{...}" />
+            <marker date="1615846256373" expanded="true" signature="553:627" ph="{...}" />
+            <marker date="1615846256373" expanded="true" signature="668:708" ph="{...}" />
+            <marker date="1615846256373" expanded="true" signature="761:17678" ph="{...}" />
+            <marker date="1615846256373" expanded="true" signature="2647:2733" ph="/* [DllImport(&quot;__Internal&quot;)] ... */" />
+            <marker date="1615846256373" expanded="true" signature="2763:3081" ph="{...}" />
+            <marker date="1615846256373" expanded="true" signature="2950:3075" ph="/* buttonFullScreen.onClick.AddListener(TaskOnClickMax); ... */" />
+            <marker date="1615846256373" expanded="true" signature="3087:3671" ph="/* void TaskOnClickMax() ... */" />
+            <marker date="1615846256373" expanded="true" signature="3702:4469" ph="{...}" />
+            <marker date="1615846256373" expanded="true" signature="3730:4144" ph="{...}" />
+            <marker date="1615846256373" expanded="true" signature="3808:3985" ph="{...}" />
+            <marker date="1615846256373" expanded="true" signature="4014:4134" ph="{...}" />
+            <marker date="1615846256373" expanded="true" signature="4184:4317" ph="{...}" />
+            <marker date="1615846256373" expanded="true" signature="4330:4463" ph="{...}" />
+            <marker date="1615846256373" expanded="true" signature="4506:5007" ph="{...}" />
+            <marker date="1615846256373" expanded="true" signature="5051:6477" ph="{...}" />
+            <marker date="1615846256373" expanded="true" signature="5332:5386" ph="{...}" />
+            <marker date="1615846256373" expanded="true" signature="5399:6471" ph="{...}" />
+            <marker date="1615846256373" expanded="true" signature="5682:5820" ph="{...}" />
+            <marker date="1615846256373" expanded="true" signature="5890:6434" ph="{...}" />
+            <marker date="1615846256373" expanded="true" signature="6504:7409" ph="{...}" />
+            <marker date="1615846256373" expanded="true" signature="6597:6679" ph="{...}" />
+            <marker date="1615846256373" expanded="true" signature="6768:7311" ph="{...}" />
+            <marker date="1615846256373" expanded="true" signature="6812:7301" ph="{...}" />
+            <marker date="1615846256373" expanded="true" signature="7456:7605" ph="{...}" />
+            <marker date="1615846256373" expanded="true" signature="7646:8385" ph="{...}" />
+            <marker date="1615846256373" expanded="true" signature="7688:8307" ph="{...}" />
+            <marker date="1615846256373" expanded="true" signature="7887:8297" ph="{...}" />
+            <marker date="1615846256373" expanded="true" signature="7971:8283" ph="{...}" />
+            <marker date="1615846256373" expanded="true" signature="8095:8265" ph="{...}" />
+            <marker date="1615846256373" expanded="true" signature="8320:8379" ph="{...}" />
+            <marker date="1615846256373" expanded="true" signature="8423:8649" ph="{...}" />
+            <marker date="1615846256373" expanded="true" signature="8711:9633" ph="{...}" />
+            <marker date="1615846256373" expanded="true" signature="9056:9122" ph="{...}" />
+            <marker date="1615846256373" expanded="true" signature="9135:9627" ph="{...}" />
+            <marker date="1615846256373" expanded="true" signature="9459:9617" ph="{...}" />
+            <marker date="1615846256373" expanded="true" signature="9672:9721" ph="{...}" />
+            <marker date="1615846256373" expanded="true" signature="9761:10467" ph="{...}" />
+            <marker date="1615846256373" expanded="true" signature="10011:10357" ph="{...}" />
+            <marker date="1615846256373" expanded="true" signature="10507:11608" ph="{...}" />
+            <marker date="1615846256373" expanded="true" signature="10549:11602" ph="{...}" />
+            <marker date="1615846256373" expanded="true" signature="10830:11189" ph="{...}" />
+            <marker date="1615846256373" expanded="true" signature="11206:11383" ph="{...}" />
+            <marker date="1615846256373" expanded="true" signature="11673:12060" ph="{...}" />
+            <marker date="1615846256373" expanded="true" signature="11798:12054" ph="{...}" />
+            <marker date="1615846256373" expanded="true" signature="11893:12044" ph="{...}" />
+            <marker date="1615846256373" expanded="true" signature="12097:12942" ph="{...}" />
+            <marker date="1615846256373" expanded="true" signature="12360:12880" ph="{...}" />
+            <marker date="1615846256373" expanded="true" signature="12991:15094" ph="{...}" />
+            <marker date="1615846256373" expanded="true" signature="13033:15088" ph="{...}" />
+            <marker date="1615846256373" expanded="true" signature="13557:13623" ph="{...}" />
+            <marker date="1615846256373" expanded="true" signature="13640:15078" ph="{...}" />
+            <marker date="1615846256373" expanded="true" signature="13832:14545" ph="{...}" />
+            <marker date="1615846256373" expanded="true" signature="14566:14831" ph="{...}" />
+            <marker date="1615846256373" expanded="true" signature="14876:15064" ph="{...}" />
+            <marker date="1615846256373" expanded="true" signature="15134:16126" ph="{...}" />
+            <marker date="1615846256373" expanded="true" signature="15187:15400" ph="{...}" />
+            <marker date="1615846256373" expanded="true" signature="15443:15796" ph="{...}" />
+            <marker date="1615846256373" expanded="true" signature="15842:16120" ph="{...}" />
+            <marker date="1615846256373" expanded="true" signature="16174:17194" ph="{...}" />
+            <marker date="1615846256373" expanded="true" signature="16227:16587" ph="{...}" />
+            <marker date="1615846256373" expanded="true" signature="16633:16941" ph="{...}" />
+            <marker date="1615846256373" expanded="true" signature="16987:17188" ph="{...}" />
+            <marker date="1615846256373" expanded="true" signature="17231:17314" ph="{...}" />
+            <marker date="1615846256373" expanded="true" signature="17355:17443" ph="{...}" />
+            <marker date="1615846256373" expanded="true" signature="17489:17573" ph="{...}" />
+            <marker date="1615846256373" expanded="true" signature="17620:17676" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

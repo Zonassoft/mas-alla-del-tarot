@@ -1,14 +1,14 @@
 # =============== #
 # Unity generated #
 # =============== #
-Temp/
-Library/
+MasAllaTarot/Temp/
+MasAllaTarot/Library/
 
 # ===================================== #
 # Visual Studio / MonoDevelop generated #
 # ===================================== #
 ExportedObj/
-obj/
+MasAllaTarot/obj/
 *.svd
 *.userprefs
 /*.csproj
@@ -29,3 +29,4 @@ obj/
 .Trashes
 ehthumbs.db
 Thumbs.db
+MasAllaTarot/Packages
