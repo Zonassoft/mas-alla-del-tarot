@@ -221,7 +221,7 @@ public class GameDadosControllerMovil : MonoBehaviour
         
         yield return req.SendWebRequest();
         
-        if (req.isNetworkError || req.isHttpError)
+        if (req.result == UnityWebRequest.Result.ConnectionError || req.result == UnityWebRequest.Result.ProtocolError)
         {
             Debug.Log(req.error);
         }

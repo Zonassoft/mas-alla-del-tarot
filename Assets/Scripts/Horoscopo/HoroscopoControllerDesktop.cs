@@ -132,7 +132,7 @@ public class HoroscopoControllerDesktop : MonoBehaviour
         
         yield return req.SendWebRequest();
         
-        if (req.isNetworkError || req.isHttpError)
+        if (req.result == UnityWebRequest.Result.ProtocolError || req.result == UnityWebRequest.Result.ConnectionError)
         {
             Debug.Log(req.error);
         }

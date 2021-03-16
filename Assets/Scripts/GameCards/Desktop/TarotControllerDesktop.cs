@@ -184,7 +184,7 @@ public class TarotControllerDesktop : MonoBehaviour
         
         yield return req.SendWebRequest();
         
-        if (req.isNetworkError || req.isHttpError)
+        if (req.result == UnityWebRequest.Result.ConnectionError || req.result == UnityWebRequest.Result.ProtocolError)
         {
             Debug.Log(req.error);
         }
@@ -298,7 +298,7 @@ public class TarotControllerDesktop : MonoBehaviour
         
         yield return www.SendWebRequest();
         
-        if (!handle.isDone || www.isHttpError || www.isNetworkError)
+        if (!handle.isDone || www.result == UnityWebRequest.Result.ProtocolError || www.result == UnityWebRequest.Result.ConnectionError)
         {
             Debug.Log("Error: " + www.error);
         }
@@ -422,7 +422,7 @@ public class TarotControllerDesktop : MonoBehaviour
         
             yield return req.SendWebRequest();
         
-            if (req.isNetworkError || req.isHttpError)
+            if (req.result == UnityWebRequest.Result.ConnectionError || req.result == UnityWebRequest.Result.ProtocolError)
             {
                 Debug.Log(req.error);
             }

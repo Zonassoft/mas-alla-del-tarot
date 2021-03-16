@@ -87,8 +87,9 @@ public class SoundUi : Singleton<SoundUi>
     
     public bool isMobile()
     {
+        //return IsMobile();
         #if !UNITY_EDITOR && UNITY_WEBGL
-             return IsMobile();
+             return SystemInfo.deviceType == DeviceType.Handheld;
         #endif
         return false;
     }
