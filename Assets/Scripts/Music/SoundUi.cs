@@ -132,11 +132,11 @@ public class SoundUi : Singleton<SoundUi>
 
     public void FullScreenMethod()
     {
-        Screen.fullScreen = !Screen.fullScreen;
+        //Screen.fullScreen = !Screen.fullScreen;
         
-//        #if !UNITY_EDITOR && UNITY_WEBGL
-//            FullScreenFunction();
-//        #endif
+        #if !UNITY_EDITOR && UNITY_WEBGL
+            FullScreenFunction();
+        #endif
     }
     
     public void Options(GameObject panelOptions, GameObject Menu, string nameAnim)
