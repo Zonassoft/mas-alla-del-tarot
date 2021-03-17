@@ -16,7 +16,7 @@
         margin: 0;
         background: #444;
       }
-      #gameContainer {
+      #unity-container {
         width: 100vw;
         height: 100vh;
       }
@@ -91,7 +91,7 @@
   </head>
 
   <body>
-    <div id="gameContainer"></div>
+    <div id="unity-container"></div>
     <div id="loader">
       <img class="logo" src="logo.png">
       <div class="spinner"></div>
@@ -101,7 +101,7 @@
 
   <script src="%UNITY_WEBGL_LOADER_URL%"></script>
   <script>
-  var gameInstance = UnityLoader.instantiate("gameContainer", "%UNITY_WEBGL_BUILD_URL%", {onProgress: UnityProgress});
+  var gameInstance = UnityLoader.instantiate("unity-container", "%UNITY_WEBGL_BUILD_URL%", {onProgress: UnityProgress});
   function UnityProgress(gameInstance, progress) {
     if (!gameInstance.Module) {
       return;
