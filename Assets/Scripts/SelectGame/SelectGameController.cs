@@ -1,8 +1,24 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+
 //using System.Runtime.InteropServices;
+
+[Serializable]
+public class Module
+{
+    public int id; 
+    public string name; 
+}
+
+[Serializable]
+public class UsersModules
+{
+    public Module[] moduleList;
+}
 
 public class SelectGameController : MonoBehaviour
 {
@@ -14,6 +30,10 @@ public class SelectGameController : MonoBehaviour
     
     public GameObject panelLoadingMobile;
     public GameObject panelLoadingDesktop;
+    
+    public GameObject[] buttonsList = new GameObject[5];
+    private UsersModules objectCardInfo = new UsersModules();
+    public GameObject componentButtons;
     
 //    [DllImport("__Internal")]
 //    private static extern bool IsMobile();
@@ -81,6 +101,64 @@ public class SelectGameController : MonoBehaviour
             string jsonString = req.downloadHandler.text;
             Token dataKey = JsonUtility.FromJson<Token>(jsonString);
             SoundUi.Instance.TokenAPI = dataKey.key;
+            
+            //SoundUi.Instance.TokenAPI = dataKey.auth_token;
+            //StartCoroutine(GetModules());
+            
+            panelLoadingDesktop.SetActive(false);
+            panelLoadingMobile.SetActive(false);
+        }
+    }
+    
+    public IEnumerator GetModules()
+    {
+        UnityWebRequest req = UnityWebRequest.Get(SoundUi.Instance.urlModules);
+        req.SetRequestHeader("Authorization", "Token " + SoundUi.Instance.TokenAPI);
+        
+        yield return req.SendWebRequest();
+        
+        if (req.result == UnityWebRequest.Result.ConnectionError || req.result == UnityWebRequest.Result.ProtocolError)
+        {
+            Debug.Log(req.error);
+        }
+        else
+        {
+            Debug.Log(req.downloadHandler.text);    
+            objectCardInfo = JsonUtility.FromJson<UsersModules>("{\"moduleList\":" + req.downloadHandler.text + "}");
+
+            int countButtons = objectCardInfo.moduleList.Length;
+            for (int i = 0; i < objectCardInfo.moduleList.Length; i++)
+            {
+                buttonsList[objectCardInfo.moduleList[i].id - 1].SetActive(true);
+
+                if (objectCardInfo.moduleList[i].id == 2)
+                {
+                    buttonsList[4].SetActive(true);
+                    countButtons++;
+                } 
+            }
+
+            if (countButtons == 3)
+                componentButtons.GetComponent<VerticalLayoutGroup>().spacing = -150;
+
+            if (countButtons <= 2)
+            {
+                componentButtons.GetComponent<VerticalLayoutGroup>().spacing = -200;
+                componentButtons.GetComponent<VerticalLayoutGroup>().padding.top = 40;
+            }
+            
+            // Para horoscopo como un modulo aparte
+//            for (int i = 0; i < objectCardInfo.moduleList.Length; i++)
+//                buttonsList[objectCardInfo.moduleList[i].id - 1].SetActive(true);
+//
+//            if (objectCardInfo.moduleList.Length == 3)
+//                componentButtons.GetComponent<VerticalLayoutGroup>().spacing = -150;
+//
+//            if (objectCardInfo.moduleList.Length == 2)
+//            {
+//                componentButtons.GetComponent<VerticalLayoutGroup>().spacing = -200;
+//                componentButtons.GetComponent<VerticalLayoutGroup>().padding.top = 40;
+//            }
             
             panelLoadingDesktop.SetActive(false);
             panelLoadingMobile.SetActive(false);

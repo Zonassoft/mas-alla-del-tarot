@@ -9,6 +9,7 @@ using UnityEngine.SceneManagement;
 public class Token
 {
     public string key;
+    //public string auth_token;
 }
 
 public class SoundUi : Singleton<SoundUi>
@@ -35,6 +36,7 @@ public class SoundUi : Singleton<SoundUi>
     public string urlDate;
     public string urlName;
     public string urlToken;
+    public string urlModules;
     public string username;
     public string password;
     public string TokenAPI;
@@ -81,8 +83,13 @@ public class SoundUi : Singleton<SoundUi>
         urlDados = "Http://82.223.139.65/api/v1/client/dado/";
         urlToken = "Http://82.223.139.65/api/v1/auth/login/";
         //urlToken = "Http://82.223.139.65/api/v1/auth/token/login/";
+        //urlToken = "http://127.0.0.1:8000/api/v1/auth/token/login/";
+        urlModules = "http://127.0.0.1:8000/api/v1/admin/conf/availables_modules/";
+        //urlModules = "http://82.223.139.65/api/v1/admin/conf/availables_modules/";
         username = "admin";
         password = "destino";
+        //username = "pizarrosa";
+        //password = "pao123456";
     }
     
     public bool isMobile()
@@ -125,9 +132,11 @@ public class SoundUi : Singleton<SoundUi>
 
     public void FullScreenMethod()
     {
-        #if !UNITY_EDITOR && UNITY_WEBGL
-            FullScreenFunction();
-        #endif
+        Screen.fullScreen = !Screen.fullScreen;
+        
+//        #if !UNITY_EDITOR && UNITY_WEBGL
+//            FullScreenFunction();
+//        #endif
     }
     
     public void Options(GameObject panelOptions, GameObject Menu, string nameAnim)

@@ -7,7 +7,6 @@ public class Singleton<T> : MonoBehaviour where T : Singleton<T> {
 		get {
 			if(!_mInstance)
 			{
-				//T [] managers = FindSceneObjectsOfType(typeof(T)) as T[];
 				T [] managers = FindObjectsOfType(typeof(T)) as T[];
 				if(managers.Length != 0)
 				{
