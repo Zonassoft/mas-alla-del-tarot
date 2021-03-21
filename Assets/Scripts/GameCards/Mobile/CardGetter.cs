@@ -5,7 +5,6 @@ using UnityEngine.EventSystems;
 
 public class CardGetter : MonoBehaviour, IDropHandler
 {
-	public PlaySoundButton playSoundClass;
 	private Transform droppedCard;
 	
 	public void OnDrop (PointerEventData eventData) 

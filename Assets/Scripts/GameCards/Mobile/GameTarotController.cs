@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using Image = UnityEngine.UI.Image;
 using Random = System.Random;
-//using System.Runtime.InteropServices;
+using TMPro;
 
 [Serializable]
 public class DescriptionAPI
@@ -57,14 +57,11 @@ public class GameTarotController : MonoBehaviour
     
     public Canvas canvasGame;
     
-//    [DllImport("__Internal")]
-//    private static extern void FullScreenFunction();
-    
     // Vista Lectura
     public GameObject[] boxDestiny;                // Las cuatro casillas donde van las cartas
     public GameObject[] boxReading;                // El componente que tiene carta, nombre, invertida
-    public Text[] descriptionsTextList;            // texto de la descripción
-    public Text[] invertTextList;                  // texto para invertida
+    public TextMeshProUGUI[] descriptionsTextList;            // texto de la descripción
+    public TextMeshProUGUI[] invertTextList;                  // texto para invertida
     
     public CardsInfo myObject = new CardsInfo();
 	
@@ -96,11 +93,8 @@ public class GameTarotController : MonoBehaviour
 
     private void Start()
     {
-        if (canvasGame.transform.GetComponent<RectTransform>().rect.width < childpanelBoxs.transform.GetComponent<RectTransform>().rect.width)
-            canvasGame.transform.GetComponent<CanvasScaler>().matchWidthOrHeight = 0.9f;
-        
-//        buttonFullScreen.onClick.AddListener(TaskOnClickMax);
-//        buttonMinimize.onClick.AddListener(TaskOnClickMin);
+//        if (canvasGame.transform.GetComponent<RectTransform>().rect.width < childpanelBoxs.transform.GetComponent<RectTransform>().rect.width)
+//            canvasGame.transform.GetComponent<CanvasScaler>().matchWidthOrHeight = 0.9f;
     }
 
     private void Update()
@@ -135,32 +129,6 @@ public class GameTarotController : MonoBehaviour
             buttonFullScreen.gameObject.SetActive(true);
         }
     }
-    
-//    void TaskOnClickMax()
-//    {
-//        StartCoroutine(WaitMax());
-//    }
-//
-//    public IEnumerator WaitMax()
-//    {
-//        yield return new WaitForSeconds(0.5f);
-//        SoundUi.Instance.FullScreenMethod();
-//        
-////        #if !UNITY_EDITOR && UNITY_WEBGL
-////           FullScreenFunction();
-////        #endif
-//    }
-//
-//    void TaskOnClickMin()
-//    {
-//        StartCoroutine(WaitMin());
-//    }
-//    
-//    public IEnumerator WaitMin()
-//    {
-//        yield return new WaitForSeconds(0.5f);
-//        Screen.fullScreen = !Screen.fullScreen;
-//    }
     
     public void ButtonShuffle()
     {
@@ -359,7 +327,7 @@ public class GameTarotController : MonoBehaviour
             }
         
             GameObject nameCardReading = boxReading[i].transform.GetChild(2).gameObject;            
-            nameCardReading.GetComponent<Text>().text = cardInBox.GetComponent<CardNew>().Name;
+            nameCardReading.GetComponent<TextMeshProUGUI>().text = cardInBox.GetComponent<CardNew>().Name;
         }
     }
     

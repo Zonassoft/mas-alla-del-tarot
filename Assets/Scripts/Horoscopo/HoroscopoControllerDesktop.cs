@@ -3,8 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-//using System.Runtime.InteropServices;
 using System.Text.RegularExpressions;
+using TMPro;
 using UnityEngine.Networking;
 using UnityEngine.SceneManagement;
 
@@ -28,26 +28,17 @@ public class HoroscopoControllerDesktop : MonoBehaviour
     
     private bool panelOptionActive;
 
-    public Text nameSignSelected;
-    public Text dateSignSelected;
-    public Text descriptionSignSelected;
+    public TextMeshProUGUI nameSignSelected;
+    public TextMeshProUGUI dateSignSelected;
+    public TextMeshProUGUI descriptionSignSelected;
     
     private string[] nameSign = {"Acuario", "Piscis", "Aries", "Tauro", "Géminis", "Cáncer", "Leo", "Virgo", "Libra", "Escorpio", "Sagitario", "Capricornio"};
     private string[] dateSign = {"(20 enero-18 febrero)", "(19 febrero-20 marzo)", "(21 marzo-19 abril)", "(20 abril-20 mayo)", "(21 mayo-20 junio)", 
                                  "(21 junio-22 julio)", "(23 julio-22 agosto)", "(23 agosto-22 septiembre)", "(23 septiembre-22 octubre)", "(23 octubre-21 noviembre)", 
                                  "(22 noviembre-21 diciembre)", "(22 diciembre-19 enero)"};
    
-//    [DllImport("__Internal")]
-//    private static extern void FullScreenFunction();
-    
     public Button buttonFullScreen;
     public Button buttonMinimize;
-    
-//    private void Start()
-//    {
-//        buttonFullScreen.onClick.AddListener(TaskOnClickMax);
-//        buttonMinimize.onClick.AddListener(TaskOnClickMin);
-//    }
     
     private void Update()
     {
@@ -62,32 +53,6 @@ public class HoroscopoControllerDesktop : MonoBehaviour
             buttonFullScreen.gameObject.SetActive(true);
         }
     }
-    
-//    void TaskOnClickMax()
-//    {
-//        StartCoroutine(WaitMax());
-//    }
-//
-//    public IEnumerator WaitMax()
-//    {
-//        yield return new WaitForSeconds(0.5f);
-//        SoundUi.Instance.FullScreenMethod();
-//        
-////        #if !UNITY_EDITOR && UNITY_WEBGL
-////           FullScreenFunction();
-////        #endif
-//    }
-//
-//    void TaskOnClickMin()
-//    {
-//        StartCoroutine(WaitMin());
-//    }
-//    
-//    public IEnumerator WaitMin()
-//    {
-//        yield return new WaitForSeconds(0.5f);
-//        Screen.fullScreen = !Screen.fullScreen;
-//    }
     
     public void ViewZodiac(int posSign)
     {

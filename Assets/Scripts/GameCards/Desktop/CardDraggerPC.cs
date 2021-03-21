@@ -4,7 +4,6 @@ using UnityEngine.EventSystems;
 
 public class CardDraggerPC : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
-    public PlaySoundButton playSoundClass;
     public static Transform draggedCardPC;                          
     public Transform hand;                                        
     public GameObject papelera;

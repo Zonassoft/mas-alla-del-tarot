@@ -8,7 +8,7 @@ using UnityEngine.Networking;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using Random = System.Random;
-//using System.Runtime.InteropServices;
+using TMPro;
 
 [Serializable]
 public class NameInfo
@@ -35,10 +35,10 @@ public class GameNamesController : MonoBehaviour
     private bool stopNameLegth;
     private bool panelOptionActive;
     
-    public Text nameUser;
-    public Text description;
-    public Text textFemale;
-    public Text texMale;
+    public TextMeshProUGUI nameUser;
+    public TextMeshProUGUI description;
+    public TextMeshProUGUI textFemale;
+    public TextMeshProUGUI texMale;
     
     public GameObject[] LettersList = new GameObject[26];
     public ParticleSystem[] particles = new ParticleSystem[26];
@@ -54,26 +54,21 @@ public class GameNamesController : MonoBehaviour
     public Sprite buttonEnnable;
     public Sprite buttonDisable;
     
-//    [DllImport("__Internal")]
-//    private static extern void FullScreenFunction();
-    
     private void Start()
     {
         particleLetters.gameObject.SetActive(true);
-//        buttonFullScreen.onClick.AddListener(TaskOnClickMax);
-//        buttonMinimize.onClick.AddListener(TaskOnClickMin);
         sexFemale = true;
     }
     
     private void Update()
     {
-        if (nameUser.text.Length > 0 && !stopNameLegth)
+        if (nameUser.text.Length > 1 && !stopNameLegth)
         {
             buttonContinue.gameObject.GetComponent<Image>().sprite = buttonEnnable;
             buttonContinue.gameObject.GetComponent<Image>().color = new Color(1f, 1f, 1f, 1f);
         }
 
-        if (nameUser.text.Length == 0)
+        if (nameUser.text.Length == 1)
         {
             buttonContinue.gameObject.GetComponent<Image>().sprite = buttonDisable;
             buttonContinue.gameObject.GetComponent<Image>().color = new Color(1f, 1f, 1f, 0.5f);
@@ -83,7 +78,7 @@ public class GameNamesController : MonoBehaviour
         {
             letterWrited.Clear();
             
-            for (int i = 0; i < nameUser.text.Length; i++)
+            for (int i = 0; i < nameUser.text.Length - 1; i++)
                 letterWrited.Add(nameUser.text[i].ToString());
             
             ActivateLetter();
@@ -100,32 +95,6 @@ public class GameNamesController : MonoBehaviour
             buttonFullScreen.gameObject.SetActive(true);
         }
     }
-    
-//    void TaskOnClickMax()
-//    {
-//        StartCoroutine(WaitMax());
-//    }
-//
-//    public IEnumerator WaitMax()
-//    {
-//        yield return new WaitForSeconds(0.5f);
-//        SoundUi.Instance.FullScreenMethod();
-//        
-////        #if !UNITY_EDITOR && UNITY_WEBGL
-////           FullScreenFunction();
-////        #endif
-//    }
-//
-//    void TaskOnClickMin()
-//    {
-//        StartCoroutine(WaitMin());
-//    }
-//    
-//    public IEnumerator WaitMin()
-//    {
-//        yield return new WaitForSeconds(0.5f);
-//        Screen.fullScreen = !Screen.fullScreen;
-//    }
     
     public void ActivateLetter()
     {
@@ -272,7 +241,7 @@ public class GameNamesController : MonoBehaviour
     
     public void ButtonShowing()
     {
-        if (nameUser.text.Length != 0)
+        if (nameUser.text.Length != 1)
         {
             stopNameLegth = true;
             particleLetters.SetActive(false);
@@ -296,8 +265,9 @@ public class GameNamesController : MonoBehaviour
 
     public void CreateName()
     {
-        for (int i = 0; i < nameUser.text.Length; i++)
+        for (int i = 0; i < nameUser.text.Length - 1; i++)
         {
+            Debug.Log("iteración: " + i + nameUser.text[i]);
             if (nameUser.text[i].ToString() == "A" || nameUser.text[i].ToString() == "a" || nameUser.text[i].ToString() == "á" || nameUser.text[i].ToString() == "Á")
                 AuxCreateLetter(0);
             if (nameUser.text[i].ToString() == "B" || nameUser.text[i].ToString() == "b")
@@ -399,8 +369,10 @@ public class GameNamesController : MonoBehaviour
 
     public IEnumerator GetNameDescription(string gender)
     {
+        string nameT = nameUser.text.Remove(nameUser.text.Length - 1);
+        
         WWWForm form = new WWWForm();
-        form.AddField("name", nameUser.text);
+        form.AddField("name", nameT);
         form.AddField("gender", gender);
         
         UnityWebRequest req = UnityWebRequest.Post(SoundUi.Instance.urlName, form);

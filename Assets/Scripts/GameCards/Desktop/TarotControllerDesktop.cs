@@ -2,13 +2,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using Image = UnityEngine.UI.Image;
 using Random = System.Random;
-//using System.Runtime.InteropServices;
 
 [Serializable]
 public class DescriptionAPIPC
@@ -93,43 +93,11 @@ public class TarotControllerDesktop : MonoBehaviour
     private bool panelOptionActive;
     private bool dragCard;
     
-//    [DllImport("__Internal")]
-//    private static extern void FullScreenFunction();
-    
     private void Start()
     {
         if (canvasGame.transform.GetComponent<RectTransform>().rect.width < 1500)
             canvasGame.transform.GetComponent<CanvasScaler>().matchWidthOrHeight = 0.7f;
-        
-//        buttonFullScreen.onClick.AddListener(TaskOnClickMax);
-//        buttonMinimize.onClick.AddListener(TaskOnClickMin);
     }
-    
-//    void TaskOnClickMax()
-//    {
-//        StartCoroutine(WaitMax());
-//    }
-//
-//    public IEnumerator WaitMax()
-//    {
-//        yield return new WaitForSeconds(0.5f);
-//        SoundUi.Instance.FullScreenMethod();
-//        
-////        #if !UNITY_EDITOR && UNITY_WEBGL
-////            FullScreenFunction();
-////        #endif
-//    }
-//
-//    void TaskOnClickMin()
-//    {
-//        StartCoroutine(WaitMin());
-//    }
-//    
-//    public IEnumerator WaitMin()
-//    {
-//        yield return new WaitForSeconds(0.5f);
-//        Screen.fullScreen = !Screen.fullScreen;
-//    }
     
     private void Update()
     {
@@ -357,16 +325,16 @@ public class TarotControllerDesktop : MonoBehaviour
                 Quaternion rot = Quaternion.Euler(cardReading.transform.rotation.x, cardReading.transform.rotation.y, 180f);    
                 cardReading.transform.rotation = rot;
                 GameObject textI = boxReading[i].transform.GetChild(3).gameObject;
-                textI.GetComponent<Text>().text = "(invertida)";
+                textI.GetComponent<TextMeshProUGUI>().text = "(invertida)";
             }
             else
             {
                 GameObject textI = boxReading[i].transform.GetChild(3).gameObject;
-                textI.GetComponent<Text>().text = "(al derecho)";
+                textI.GetComponent<TextMeshProUGUI>().text = "(al derecho)";
             }
             
             GameObject nameCardReading = boxReading[i].transform.GetChild(2).gameObject;            
-            nameCardReading.GetComponent<Text>().text = cardInBox.GetComponent<CardPC>().Name;
+            nameCardReading.GetComponent<TextMeshProUGUI>().text = cardInBox.GetComponent<CardPC>().Name;
         }
     }
     
@@ -443,12 +411,12 @@ public class TarotControllerDesktop : MonoBehaviour
                         predictionOk = predictionOk.Replace("\u2028", " ");
                     
                     GameObject cardDescription = boxReading[i].transform.GetChild(4).gameObject;
-                    cardDescription.GetComponent<Text>().text = predictionOk;
+                    cardDescription.GetComponent<TextMeshProUGUI>().text = predictionOk;
                 }
                 else
                 {
                     GameObject cardDescription = boxReading[i].transform.GetChild(4).gameObject;
-                    cardDescription.GetComponent<Text>().text = "Lo sentimos, no encontramos una predicción para esa combinación.";
+                    cardDescription.GetComponent<TextMeshProUGUI>().text = "Lo sentimos, no encontramos una predicción para esa combinación.";
                 }
                 
                 if (i == 3)

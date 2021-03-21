@@ -94,9 +94,8 @@ public class SoundUi : Singleton<SoundUi>
     
     public bool isMobile()
     {
-        //return IsMobile();
         #if !UNITY_EDITOR && UNITY_WEBGL
-             return SystemInfo.deviceType == DeviceType.Handheld;
+             return IsMobile();
         #endif
         return false;
     }
@@ -132,8 +131,6 @@ public class SoundUi : Singleton<SoundUi>
 
     public void FullScreenMethod()
     {
-        //Screen.fullScreen = !Screen.fullScreen;
-        
         #if !UNITY_EDITOR && UNITY_WEBGL
             FullScreenFunction();
         #endif

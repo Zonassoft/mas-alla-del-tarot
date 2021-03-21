@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-//using System.Runtime.InteropServices;
 using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using Random = UnityEngine.Random;
 using System.Text.RegularExpressions;
+using TMPro;
 
 [Serializable]
 public class DicesInfo
@@ -28,9 +28,6 @@ public class GameDadosControllerMovil : MonoBehaviour
     public GameObject dadosDesktop;
     public GameObject dado;
     public GameObject dado2;
-    
-//    [DllImport("__Internal")]
-//    private static extern void FullScreenFunction();
     
     public Button buttonFullScreen;
     public Button buttonMinimize;
@@ -54,16 +51,13 @@ public class GameDadosControllerMovil : MonoBehaviour
     public int numD2;
     public float speed;
 
-    public Text descriptionBlue;
-    public Text descriptionRed;
-    public Text numberBlue;
-    public Text numberRed;
+    public TextMeshProUGUI descriptionBlue;
+    public TextMeshProUGUI descriptionRed;
+    public TextMeshProUGUI numberBlue;
+    public TextMeshProUGUI numberRed;
     
     private void Start()
     {
-//        buttonFullScreen.onClick.AddListener(TaskOnClickMax);
-//        buttonMinimize.onClick.AddListener(TaskOnClickMin);
-        
         dados.SetActive(true);
         dadosDesktop.SetActive(false);
     }
@@ -131,32 +125,6 @@ public class GameDadosControllerMovil : MonoBehaviour
         if (numD2 == 6)
             dado2.transform.rotation = Quaternion.Euler(n6.x, n6.y, n6.z);
     }
-    
-//    void TaskOnClickMax()
-//    {
-//        StartCoroutine(WaitMax());
-//    }
-//
-//    public IEnumerator WaitMax()
-//    {
-//        yield return new WaitForSeconds(0.5f);
-//        SoundUi.Instance.FullScreenMethod();
-//        
-////        #if !UNITY_EDITOR && UNITY_WEBGL
-////           FullScreenFunction();
-////        #endif
-//    }
-//
-//    void TaskOnClickMin()
-//    {
-//        StartCoroutine(WaitMin());
-//    }
-//    
-//    public IEnumerator WaitMin()
-//    {
-//        yield return new WaitForSeconds(0.5f);
-//        Screen.fullScreen = !Screen.fullScreen;
-//    }
     
     public void ClicDado()
     {

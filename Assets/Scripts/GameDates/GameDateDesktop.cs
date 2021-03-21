@@ -3,11 +3,11 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-//using System.Runtime.InteropServices;
 
 [Serializable]
 public class DateInfoPC
@@ -33,25 +33,22 @@ public class GameDateDesktop : MonoBehaviour
     public GameObject panelOptions;
     public GameObject particleNumbers;
     
-    public Text description;
-    public Text numberDescription;
-    public Text zodiacSingDescription;
-    public Text signHoroscopo;
-    public Text descriptionHoroscopo;
-    public Text numberCenter;
-    public Text day;
-    public Text year;
-    public Text titleRevelacion;
+    public TextMeshProUGUI description;
+    public TextMeshProUGUI numberDescription;
+    public TextMeshProUGUI zodiacSingDescription;
+    public TextMeshProUGUI signHoroscopo;
+    public TextMeshProUGUI descriptionHoroscopo;
+    public TextMeshProUGUI numberCenter;
+    public TextMeshProUGUI day;
+    public TextMeshProUGUI year;
+    public TextMeshProUGUI titleRevelacion;
     
     private bool panelOptionActive;
-    private bool rightDay;
-    private bool rightYear;
-    private bool rightMonth;
+    public bool rightDay;
+    public bool rightYear;
+    public bool rightMonth;
     private bool validation = true;
     private bool stopNumberLegth;
-    
-//    [DllImport("__Internal")]
-//    private static extern void FullScreenFunction();
     
     public Button buttonFullScreen;
     public Button buttonMinimize;
@@ -77,8 +74,6 @@ public class GameDateDesktop : MonoBehaviour
     private void Start()
     {
         particleNumbers.gameObject.SetActive(true);
-//        buttonFullScreen.onClick.AddListener(TaskOnClickMax);
-//        buttonMinimize.onClick.AddListener(TaskOnClickMin);
     }
 
     private void Update()
@@ -96,9 +91,11 @@ public class GameDateDesktop : MonoBehaviour
 
         if (validation)
         {
-            if (day.text.Length == 1 || day.text.Length == 2)
+            if (day.text.Length == 2 || day.text.Length == 3)
             {
-                if (listNumbers.Contains(day.text))
+                string dayT = day.text.Remove(day.text.Length - 1);
+                
+                if (listNumbers.Contains(dayT))
                     rightDay = true;
                 else
                     rightDay = false;
@@ -108,11 +105,12 @@ public class GameDateDesktop : MonoBehaviour
                 rightDay = false;
             }
 
-            if (year.text.Length == 4)
+            if (year.text.Length == 5)
             {
                 int firstYear = DateTime.Now.Year - 100;
+                string yearT = year.text.Remove(year.text.Length - 1);
                 
-                if (Convert.ToInt32(year.text) <= DateTime.Now.Year && Convert.ToInt32(year.text) >= firstYear)
+                if (Convert.ToInt32(yearT) <= DateTime.Now.Year && Convert.ToInt32(yearT) >= firstYear)
                     rightYear = true;
                 else
                     rightDay = false;
@@ -122,7 +120,7 @@ public class GameDateDesktop : MonoBehaviour
                 rightDay = false;
             }
 
-            if (DropDownMonths.transform.GetComponent<Dropdown>().value != 0)
+            if (DropDownMonths.transform.GetComponent<TMP_Dropdown>().value != 0)
                 rightMonth = true;
             else
                 rightMonth = false;
@@ -143,41 +141,15 @@ public class GameDateDesktop : MonoBehaviour
         {
             numberWrited.Clear();
             
-            for (int i = 0; i < day.text.Length; i++)
+            for (int i = 0; i < day.text.Length - 1; i++)
                 numberWrited.Add(day.text[i].ToString());
             
-            for (int i = 0; i < year.text.Length; i++)
+            for (int i = 0; i < year.text.Length - 1; i++)
                 numberWrited.Add(year.text[i].ToString());
                     
             ActivateNumber();
         }
     }
-    
-//    void TaskOnClickMax()
-//    {
-//        StartCoroutine(WaitMax());
-//    }
-//
-//    public IEnumerator WaitMax()
-//    {
-//        yield return new WaitForSeconds(0.5f);
-//        SoundUi.Instance.FullScreenMethod();
-//        
-////        #if !UNITY_EDITOR && UNITY_WEBGL
-////           FullScreenFunction();
-////        #endif
-//    }
-//
-//    void TaskOnClickMin()
-//    {
-//        StartCoroutine(WaitMin());
-//    }
-//    
-//    public IEnumerator WaitMin()
-//    {
-//        yield return new WaitForSeconds(0.5f);
-//        Screen.fullScreen = !Screen.fullScreen;
-//    }
     
     public void ActivateNumber()
     {
@@ -246,13 +218,16 @@ public class GameDateDesktop : MonoBehaviour
     {
         if (rightDay && rightYear && rightMonth)
         {
-            if (day.text.Length != 0)
-                dayAPI = day.text;
+            string dayT = day.text.Remove(day.text.Length - 1);
+            string yearT = year.text.Remove(year.text.Length - 1);
+            
+            if (day.text.Length != 1)
+                dayAPI = dayT;
             else
                 dayAPI = DateTime.Now.Day.ToString();
             
-            if (year.text.Length != 0)
-                yearAPI = year.text;
+            if (year.text.Length != 1)
+                yearAPI = yearT;
             else
                 yearAPI = DateTime.Now.Year.ToString();
 
@@ -260,7 +235,7 @@ public class GameDateDesktop : MonoBehaviour
             stopNumberLegth = true;
             panelLoading.SetActive(true);
             
-            int monthUser = DropDownMonths.transform.GetComponent<Dropdown>().value;
+            int monthUser = DropDownMonths.transform.GetComponent<TMP_Dropdown>().value;
             string date = dayAPI + "/" + monthUser + "/" + yearAPI;
             StartCoroutine(GetDateDescription(date));
         }

@@ -4,12 +4,12 @@ using System.Net.Mime;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using TMPro;
 
 public class SelectCard : MonoBehaviour, IPointerClickHandler
 {
-    public PlaySoundButton playSoundClass;
     private GameTarotController classController;
-    public Text number;
+    public TextMeshProUGUI number;
     private bool selected;
     
     void Awake()
@@ -20,6 +20,7 @@ public class SelectCard : MonoBehaviour, IPointerClickHandler
     public void OnPointerClick(PointerEventData pointerEventData)
     {
        SoundUi.Instance.PlaySound(1);
+       number = gameObject.transform.GetChild(0).gameObject.GetComponent<TextMeshProUGUI>();
         
        if (classController.countselectedCard < 4 && !selected)
        {
